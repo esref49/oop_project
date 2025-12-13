@@ -35,3 +35,8 @@ class EmergencyUnit(ABC):
     def report_fault(self):
         # Arıza bildirimi yapar
         pass
+
+    @abstractmethod
+    def determine_availability(self):
+        # Müsaitlik durumunu belirler
+        pass
