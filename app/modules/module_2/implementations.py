@@ -22,7 +22,6 @@ class ElectricityMeter(Utility):
         """
         base_cost = self._usage_amount * self._unit_price
         
-        # Voltaj dalgalanmasına göre ufak bir kaçak payı ekleyelim (Simülasyon)
         if self._voltage > 230:
             return base_cost * 1.05  # %5 ek maliyet
         return base_cost
