@@ -340,39 +340,3 @@ class FireFightingUnit(EmergencyUnit):
         print(f"Görevde mi: {self.is_it_on_duty}")
         print(f"Siren açık mı: {self.is_siren_on}")
         print(f"Yeterli personel var mı: {self.is_enough_staff}")
-
-
-class EmergencyService():
-    def __init__(self, repository):
-        self.repository = repository
-
-    def create_emergency_case(self, location, case_type, severity):
-        is_critical = self.check_severity_level(severity)
-        
-        new_case = {
-            "location": location,
-            "type": case_type,
-            "severity": severity,
-            "critical_status": is_critical,
-            "status": "Active",
-            "assigned_unit": None
-        }
-        
-        self.repository.log_incident(new_case)
-        
-        print(f"[INFO] Yeni vaka oluşturuldu: {case_type} - {location}")
-        return new_case
-
-    def dispatch_nearest_unit(self, incident_location):
-      pass
-
-    def generate_response_plan(self, case_type):
-        pass
-
-    @staticmethod
-    def check_severity_level(severity_score):
-        pass
-
-    @classmethod
-    def broadcast_city_wide_alert(cls, message):
-        pass
