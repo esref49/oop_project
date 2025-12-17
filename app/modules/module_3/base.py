@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class EmergencyUnit(ABC):
     def __init__(self, unit_id, unit_type, current_location, availability, fuel_level, is_enough_staff, is_siren_on = False, is_it_on_duty = False):
-        self.unit_id = unit_id
+        self.__unit_id = unit_id
         self.unit_type = unit_type
         self.current_location = current_location
         self.availability = availability
@@ -10,6 +10,14 @@ class EmergencyUnit(ABC):
         self.is_enough_staff = is_enough_staff
         self.is_siren_on = is_siren_on
         self.is_it_on_duty = is_it_on_duty
+
+    @property
+    def unit_id(self):
+        return self.__unit_id
+    
+    @unit_id.setter
+    def unit_id(self, new_id):
+        self.__unit_id = new_id
 
     @abstractmethod
     def update_location(self):

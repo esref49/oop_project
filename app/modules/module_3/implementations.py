@@ -3,6 +3,7 @@ import time
 from app.modules.module_3.base import EmergencyUnit
 import numpy as np
 
+# --- Entities --- 
 # --- Ambulance Sınıfı ---
 class AmbulanceUnit(EmergencyUnit):
 
