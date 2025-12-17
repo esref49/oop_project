@@ -1,7 +1,19 @@
 # Module 4 - Sosyal Hizmetler Demo Senaryosu
-from .implementations import GidaYardimi, BarinmaDestegi, EgitimDestegi
-from .repository import SosyalHizmetRepository
-from .services import SosyalHizmetServisi
+import sys
+import os
+
+# Proje kök dizinini path'e ekle
+if __name__ == "__main__":
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..'))
+    if project_root not in sys.path:
+        sys.path.insert(0, project_root)
+    from app.modules.module_4.implementations import GidaYardimi, BarinmaDestegi, EgitimDestegi
+    from app.modules.module_4.repository import SosyalHizmetRepository
+    from app.modules.module_4.services import SosyalHizmetServisi
+else:
+    from .implementations import GidaYardimi, BarinmaDestegi, EgitimDestegi
+    from .repository import SosyalHizmetRepository
+    from .services import SosyalHizmetServisi
 
 def main():
     print("=" * 60)
