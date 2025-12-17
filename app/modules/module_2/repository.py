@@ -47,7 +47,7 @@ class UtilityRepository:
         return False
 
     def filter_by_type(self, meter_type):
-        """Belirli bir türdeki (örn: Electricity) sayaçları listeler."""
+        """Belirli bir türdeki (örn:Electricity) sayaçları listeler."""
         result = [m for m in self._storage if m._type == meter_type]
         return result
 
