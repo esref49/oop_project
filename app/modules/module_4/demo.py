@@ -17,24 +17,24 @@ else:
 
 def main():
     print("=" * 60)
-    print("SOSYAL HİZMETLER YÖNETİM SİSTEMİ - DEMO")
+    print("SOSYAL HIZMETLER YONETIM SISTEMI - DEMO")
     print("=" * 60)
     print()
     
-    # Repository ve servis oluşturma
+    # Repository ve servis katmanlarini initialize et
     repo = SosyalHizmetRepository()
     servis = SosyalHizmetServisi(repo)
     
-    print("📋 Sistem başlatıldı...")
+    print("[INFO] Sistem baslat...")
     print()
     
-    # Hizmetleri oluşturma ve repository'ye ekleme
-    print("🏢 Hizmetler oluşturuluyor...")
+    # Hizmet instance'larini olustur ve repository'ye kaydet
+    print("[SETUP] Hizmet nesneleri olusturuluyor...")
     hizmet1 = GidaYardimi(1, 1500, 15)
     hizmet2 = BarinmaDestegi(2, 5000, "daire")
     hizmet3 = EgitimDestegi(3, 2000, "lise")
     
-    # Hizmetleri aktif etme
+    # Hizmetleri aktif duruma getir
     hizmet1.aktif_et()
     hizmet2.aktif_et()
     hizmet3.aktif_et()
@@ -43,13 +43,13 @@ def main():
     repo.hizmet_ekle(hizmet2)
     repo.hizmet_ekle(hizmet3)
     
-    print(f"✅ {hizmet1.name} eklendi - Durum: {hizmet1.status}")
-    print(f"✅ {hizmet2.name} eklendi - Durum: {hizmet2.status}")
-    print(f"✅ {hizmet3.name} eklendi - Durum: {hizmet3.status}")
+    print(f"[OK] {hizmet1.name} eklendi - Durum: {hizmet1.status}")
+    print(f"[OK] {hizmet2.name} eklendi - Durum: {hizmet2.status}")
+    print(f"[OK] {hizmet3.name} eklendi - Durum: {hizmet3.status}")
     print()
     
-    # Vatandaş profilleri oluşturma
-    print("👥 Vatandaş profilleri oluşturuluyor...")
+    # Vatandas profilleri olustur
+    print("[SETUP] Vatandas varliklari olusturuluyor...")
     vatandas1 = {
         "ad": "Ali Yılmaz",
         "gelir": 8000,
@@ -88,14 +88,14 @@ def main():
     repo.vatandas_ekle(vatandas3)
     repo.vatandas_ekle(vatandas4)
     
-    print(f"✅ {vatandas1['ad']} kaydedildi")
-    print(f"✅ {vatandas2['ad']} kaydedildi")
-    print(f"✅ {vatandas3['ad']} kaydedildi")
-    print(f"✅ {vatandas4['ad']} kaydedildi")
+    print(f"[OK] {vatandas1['ad']} kaydedildi")
+    print(f"[OK] {vatandas2['ad']} kaydedildi")
+    print(f"[OK] {vatandas3['ad']} kaydedildi")
+    print(f"[OK] {vatandas4['ad']} kaydedildi")
     print()
     
-    # POLİMORFİZM ÖRNEĞİ 1: Farklı hizmet tipleri aynı liste içinde
-    print("🔄 POLİMORFİZM ÖRNEĞİ 1: Tüm hizmetler için döngü")
+    # POLIMORFIZM ORNEGI 1: Farkli hizmet tipleri ayni liste icinde
+    print("[POLIMORFIZM-1] Tum hizmetler icin ortak interface kullanimi")
     print("-" * 60)
     hizmetler = [hizmet1, hizmet2, hizmet3]
     
@@ -107,50 +107,50 @@ def main():
         print(f"  - Durum: {hizmet.status}")
         print()
     
-    # Vatandaş 1 için başvurular
-    print("📝 Başvuru İşlemleri - Ali Yılmaz")
+    # Vatandas 1 icin basvuru islemleri
+    print("[BASVURU] Ali Yilmaz icin basvuru isleme")
     print("-" * 60)
     
-    # POLİMORFİZM ÖRNEĞİ 2: Aynı metod farklı hizmetlerde farklı davranış
+    # POLIMORFIZM ORNEGI 2: Ayni metod farkli hizmetlerde farkli davranis
     for hizmet in hizmetler:
-        # Her hizmet kendi destek_hesapla ve uygunluk_kontrolu metodunu çalıştırıyor
+        # Her hizmet kendi destek_hesapla ve uygunluk_kontrolu metodunu calistiriyor
         sonuc = servis.basvuru_olustur(vatandas1, hizmet)
-        print(f"🔹 {sonuc}")
+        print(f"[RESULT] {sonuc}")
     print()
     
-    # Vatandaş 2 için başvurular
-    print("📝 Başvuru İşlemleri - Ayşe Kaya")
+    # Vatandas 2 icin basvuru islemleri
+    print("[BASVURU] Ayse Kaya icin basvuru isleme")
     print("-" * 60)
     for hizmet in hizmetler:
         sonuc = servis.basvuru_olustur(vatandas2, hizmet)
-        print(f"🔹 {sonuc}")
+        print(f"[RESULT] {sonuc}")
     print()
     
-    # Vatandaş 3 için başvurular (yüksek gelirli, reddedilmeli)
-    print("📝 Başvuru İşlemleri - Mehmet Demir (Yüksek Gelir)")
+    # Vatandas 3 icin basvuru islemleri (yuksek gelirli, reddedilmeli)
+    print("[BASVURU] Mehmet Demir icin basvuru isleme (Yuksek Gelir)")
     print("-" * 60)
     for hizmet in hizmetler:
         sonuc = servis.basvuru_olustur(vatandas3, hizmet)
-        print(f"🔹 {sonuc}")
+        print(f"[RESULT] {sonuc}")
     print()
     
-    # Uygun hizmet bulma
-    print("🔍 Uygun Hizmet Bulma - Zeynep Arslan")
+    # Uygun hizmet bulma algoritması
+    print("[ANALIZ] Zeynep Arslan icin uygun hizmet analizi")
     print("-" * 60)
     uygun_hizmetler = servis.uygun_hizmetleri_bul(vatandas4)
-    print(f"Zeynep Arslan için uygun hizmet sayısı: {len(uygun_hizmetler)}")
+    print(f"Zeynep Arslan icin uygun hizmet sayisi: {len(uygun_hizmetler)}")
     for hizmet in uygun_hizmetler:
-        print(f"  ✓ {hizmet.name} - Destek: {hizmet.destek_hesapla()} TL")
+        print(f"  [MATCH] {hizmet.name} - Destek: {hizmet.destek_hesapla()} TL")
     print()
     
-    # En iyi hizmet önerisi
+    # En iyi hizmet onerisi algoritması
     en_iyi = servis.en_iyi_hizmet_onerisi(vatandas4)
     if en_iyi:
-        print(f"💡 En iyi öneri: {en_iyi.name} ({en_iyi.destek_hesapla()} TL)")
+        print(f"[RECOMMENDATION] En iyi oneri: {en_iyi.name} ({en_iyi.destek_hesapla()} TL)")
     print()
     
-    # Class metodları kullanımı
-    print("📊 Class Metodları Kullanımı")
+    # Class metodlari ile sinif seviyesi islemler
+    print("[CLASS-METHODS] Sinif seviyesi metod cagrilari")
     print("-" * 60)
     print(f"Toplam Gıda Yardımı Sayısı: {GidaYardimi.toplam_gida_yardimi_sayisi()}")
     print(f"Toplam Barınma Desteği Sayısı: {BarinmaDestegi.toplam_barinma_destegi_sayisi()}")
@@ -158,8 +158,8 @@ def main():
     print(f"Toplam Sosyal Hizmet Sayısı: {hizmet1.toplam_hizmet_sayisi()}")
     print()
     
-    # Static metodları kullanımı
-    print("🔧 Static Metodları Kullanımı")
+    # Static metodlar ile utilite fonksiyonlari
+    print("[STATIC-METHODS] Utilite metod cagrilari")
     print("-" * 60)
     print(f"Belediye Politikası: {hizmet1.belediye_politikasi()}")
     print(f"Gıda Yardımı Gelir Limiti: {GidaYardimi.gelir_limiti()} TL")
@@ -168,8 +168,8 @@ def main():
     print(f"Öncelik Kategorileri: {hizmet1.oncelik_kategorileri()}")
     print()
     
-    # Repository istatistikleri
-    print("📈 Repository İstatistikleri")
+    # Repository katmani istatistikleri
+    print("[REPOSITORY] Veri katmani istatistik raporu")
     print("-" * 60)
     ozet = repo.ozet_rapor()
     print(f"Toplam Hizmet: {ozet['toplam_hizmet']}")
@@ -180,8 +180,8 @@ def main():
     print(f"Ortalama Destek: {ozet['ortalama_destek']:.2f} TL")
     print()
     
-    # Hizmet performans analizi
-    print("📊 Hizmet Performans Analizi")
+    # Hizmet performans metrikleri
+    print("[ANALYTICS] Hizmet performans metrikleri")
     print("-" * 60)
     for hizmet in hizmetler:
         performans = servis.hizmet_performansi_analiz(hizmet.name)
@@ -192,8 +192,8 @@ def main():
             print(f"  - Red Oranı: {performans['red_orani']:.1f}%")
             print()
     
-    # En popüler hizmet
-    print("🏆 En Popüler Hizmet")
+    # En yuksek talep goren hizmet
+    print("[ANALYTICS] En yuksek talep goren hizmet")
     print("-" * 60)
     en_populer = repo.en_populer_hizmet()
     if en_populer:
@@ -201,8 +201,8 @@ def main():
         print(f"Başvuru Sayısı: {en_populer[1]}")
     print()
     
-    # Hizmet planı oluşturma
-    print("📅 Hizmet Planı Oluşturma - Ali Yılmaz")
+    # Hizmet planlama modulu
+    print("[PLANNING] Ali Yilmaz icin hizmet plani olusturma")
     print("-" * 60)
     from datetime import datetime
     plan = servis.hizmet_plani_olustur(vatandas1, datetime.now())
@@ -213,15 +213,15 @@ def main():
         print(f"  - {h['hizmet_adi']}: {h['miktar']} TL")
     print()
     
-    # Acil başvuru
-    print("🚨 Acil Başvuru - Zeynep Arslan")
+    # Acil basvuru islemleri
+    print("[EMERGENCY] Zeynep Arslan icin acil basvuru")
     print("-" * 60)
     acil_sonuc = servis.acil_basvuru_olustur(vatandas4, hizmet2, aciliyet_derecesi=5)
-    print(f"🔹 {acil_sonuc}")
+    print(f"[RESULT] {acil_sonuc}")
     print()
     
-    # Bildirimler
-    print("🔔 Bildirimler")
+    # Bildirim sistemi
+    print("[NOTIFICATIONS] Bildirim sistemi durumu")
     print("-" * 60)
     servis.bildirim_gonder("Yönetici", "Sistem sağlıklı çalışıyor", "bilgi")
     servis.bildirim_gonder("Yönetici", "Acil başvuru mevcut", "acil")
@@ -232,8 +232,8 @@ def main():
         print(f"  - [{bildirim['tip'].upper()}] {bildirim['mesaj']}")
     print()
     
-    # Sistem sağlık kontrolü
-    print("💊 Sistem Sağlık Kontrolü")
+    # Sistem health check
+    print("[HEALTH-CHECK] Sistem saglik kontrolu")
     print("-" * 60)
     saglik = servis.sistem_saglik_kontrolu()
     print(f"Sistem Durumu: {saglik['sistem_durumu'].upper()}")
@@ -244,8 +244,8 @@ def main():
     print(f"Okunmamış Bildirim: {saglik['okunmamis_bildirim']}")
     print()
     
-    # Özel metodlar kullanımı
-    print("🎯 Özel Hesaplama Metodları")
+    # Ozel hesaplama algoritmalari
+    print("[ALGORITHMS] Ozel hesaplama metodlari")
     print("-" * 60)
     
     # Gıda yardımı için çocuk desteği
@@ -261,8 +261,18 @@ def main():
     print(f"85 ortalama ile burs miktarı: {basari_bursu} TL")
     print()
     
-    # Magic metodlar
-    print("✨ Magic Metodlar")
+    # Vatandas gecmis kayit analizi
+    print("[HISTORY-ANALYSIS] Ali Yilmaz gecmis kayit analizi")
+    print("-" * 60)
+    gecmis = servis.vatandas_gecmis_analizi("Ali Yılmaz")
+    if gecmis:
+        print(f"Toplam Başvuru: {gecmis['toplam_basvuru']}")
+        print(f"Onaylanan: {gecmis['onaylanan_sayi']}")
+        print(f"Alınan Toplam Destek: {gecmis['toplam_alinan_destek']} TL")
+    print()
+    
+    # Python magic metodlari (dunder methods)
+    print("[DUNDER-METHODS] Magic metod implementasyonlari")
     print("-" * 60)
     print(f"str(hizmet1): {str(hizmet1)}")
     print(f"repr(hizmet1): {repr(hizmet1)}")
@@ -270,8 +280,8 @@ def main():
     print(f"hizmet1 == hizmet1: {hizmet1 == hizmet1}")
     print()
     
-    # Son log kayıtları
-    print("📜 Son İşlem Kayıtları")
+    # Log tracking sistemi
+    print("[LOGS] Son islem kayitlari")
     print("-" * 60)
     son_loglar = repo.son_loglari_getir(5)
     for log in son_loglar:
@@ -279,7 +289,7 @@ def main():
     print()
     
     print("=" * 60)
-    print("DEMO TAMAMLANDI")
+    print("DEMO EXECUTION COMPLETED")
     print("=" * 60)
 
 # Demo'yu çalıştırma

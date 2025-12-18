@@ -319,6 +319,20 @@ class SosyalHizmetServisi:
         cls._servis_sayisi = 0
         return "Servis sayısı sıfırlandı"
     
+    # Vatandaşın sosyal yardım geçmişini analiz eden metod
+    def vatandas_gecmis_analizi(self, vatandas_adi):
+        basvurular = self.vatandas_basvurulari(vatandas_adi)
+        if not basvurular:
+            return None
+        
+        return {
+            "toplam_basvuru": len(basvurular),
+            "onaylanan_sayi": len([b for b in basvurular if b.get("durum") == "onaylandi"]),
+            "toplam_alinan_destek": self.vatandas_toplam_destek(vatandas_adi),
+            "ilk_basvuru": min([b.get("tarih", datetime.now()) for b in basvurular]),
+            "son_basvuru": max([b.get("tarih", datetime.now()) for b in basvurular])
+        }
+    
     # Desteklenen bildirim tiplerini döndüren static metod
     @staticmethod
     def bildirim_tipleri():
