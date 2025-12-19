@@ -227,7 +227,7 @@ class PoliceUnit(EmergencyUnit):
 # --- İtfaye Sınıfı ---
 class FireFightingUnit(EmergencyUnit):
     def __init__(self, unit_id, fuel_level, is_enough_staff, water_level, foam_level, ladder_length = 20,
-                 unit_type = "İtfaye", current_location = np.random.randint(20), availability = True, is_siren_on = False, is_it_on_duty = False):
+                 unit_type = "İtfaiye", current_location = np.random.randint(20), availability = True, is_siren_on = False, is_it_on_duty = False):
         
         # Üst sınıfın (EmergencyUnit) özelliklerini miras alarak başlatır
         super().__init__(unit_id, unit_type, current_location, availability, fuel_level, is_enough_staff, is_siren_on, is_it_on_duty)
@@ -282,9 +282,7 @@ class FireFightingUnit(EmergencyUnit):
             print("[-] Tanımsız arıza durumu.")
 
     def determine_availability(self):
-        """
-        Aracın genel durumuna bakarak müsaitliğini belirler.
-        """
+        # Aracın müsaitliğini belirler.
         # Sterilizasyon yoksa, malzeme azsa, personel eksikse veya araç bozuksa müsait değildir
         if self.fuel_level < 20 or self.foam_level < 10 or self.water_level < 20 or self.is_enough_staff == False or self.is_broken:
             self.availability = False
