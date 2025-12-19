@@ -2,44 +2,80 @@ import time
 import numpy as np
 
 class EmergencyService:
-    def __init__(self, unit):
+    def __init__(self, repository):
         self.nearest_unit = None
-        self.units = unit
+        self.repository = repository
+        self.location = np.random.randint(0,22)
 
-    def creating_case(self, location, case_type, severity):
+    def creating_case(self, case_type, severity, unit_list):
         # Olaya verilen puana göre olayın ciddiyetini belirler.
         if severity > 8:
             is_critical = "Evet"
         else:
             is_critical = "Hayır"
         
+        # En yakın birimi bul
+        self.nearest_unit = self.finding_the_nearest_unit(unit_list, self.get_unit_type_for_case(case_type))
+        
         # Vaka bilgilerini sözlük içinde toplar.
         new_case = {
-            "location": location,
+            "location": self.location,
             "type": case_type,
             "severity": severity,
             "critical_status": is_critical,
             "status": "Active",
-            "assigned_unit": None
+            "assigned_unit": self.nearest_unit.unit_type if self.nearest_unit else None,
+            "assigned_unit_id": self.nearest_unit.unit_id if self.nearest_unit else None
         }
         
-        # Vakayı vakalar sözlüğüne kaydeder.
-        self.units.save_case(new_case)
-        
         # Yeni vakanın oluştuğu bilgisini verir.
-        print(f"[INFO] Yeni vaka oluşturuldu: {case_type} - {location} - {severity}")
+        print("="*30)
+        print(f"Vaka konumu: {new_case['location']}")
+        print(f"Vaka türü: {new_case['type']}")
+        print(f"Vaka seviyesi: {new_case['severity']}")
+        print(f"Vaka kritik mi: {new_case['critical_status']}")
+        print(f"Görevlendirilen birim: {new_case['assigned_unit']}")
+        print(f"Görevlendirilen birim ID: {new_case['assigned_unit_id']}")
+        print("="*30)
+        print("\n")
+        
+        # Eğer birim atandıysa müdahale planını çalıştır
+        if self.nearest_unit:
+            self.creating_intervention_plan(case_type)
+        
         return new_case
-
-    def finding_the_nearest_unit(self, incident_location, unit_type, unit_list):
+    
+    def get_unit_type_for_case(self, case_type):
+        #Vaka türüne göre gerekli birim türünü döndürür
+        case_to_unit = {
+            "Yangın": "İtfaiye",
+            "Kimyasal Sızıntı": "İtfaiye",
+            "Sel/Su Baskını": "İtfaiye",
+            "Mahsur Kalma": "İtfaiye", 
+            "Trafik Kazası": "Polis",
+            "Hırsızlık": "Polis",
+            "Rehine Krizi": "Polis",
+            "Şüpheli Paket": "Polis",
+            "Kavga/Darp": "Polis",
+            "Kalp Krizi": "Ambulans",
+            "Yaralanma": "Polis",
+            "Zehirlenme": "Ambulans",
+            "Doğum": "Ambulans",
+            "Bayılma": "Ambulans"
+        }
+        return case_to_unit.get(case_type, "")
+        
+    def finding_the_nearest_unit(self, unit_list, unit_type):
         # En yakın aracı bulmak için başlangıç değişkenlerini tanımlar.
         min_distance = 999999999999
+        self.nearest_unit = None  # Reset each time
 
         # Verilen listedeki tüm araçları tek tek kontrol eder.
         for unit in unit_list: 
             # Aracın müsait olup olmadığını ve olay tipine uygunluğunu kontrol eder.
             if unit.availability and unit.unit_type == unit_type:
                 # Olay yeri ile araç arasındaki mesafeyi hesaplar.
-                distance = abs(unit.current_location - incident_location) 
+                distance = abs(unit.current_location - self.location) 
 
                 # Eğer bu araç daha önce bulunanlardan daha yakınsa, en yakın olarak bunu seçer.
                 if distance < min_distance:
@@ -48,24 +84,28 @@ class EmergencyService:
                     
         # Eğer uygun bir araç bulunduysa sevk işlemlerini başlatır.
         if self.nearest_unit:
-            print(f"[INFO]: {self.nearest_unit.unit_id} kodlu {self.nearest_unit.unit_type} olay yerine sevk ediliyor.")
-            print(f"           Tahmini Mesafe: {min_distance} km")
+            print("\n")
+            print("="*30)
+            print("[INFO] Yeni vaka oluşturuldu")
+            print(f"[INFO] {self.nearest_unit.unit_id} kodlu {self.nearest_unit.unit_type} olay yerine sevk ediliyor.")
+            print(f"[INFO] Tahmini Mesafe: {min_distance} km")
+            print(f"[INFO] {self.nearest_unit.unit_type} biriminin anlık konumu: {self.nearest_unit.current_location}") 
+            print("="*30)
+            print("\n")
             
             # Aracın durumunu günceller: Göreve çıkarır, meşgul yapar, sireni açar ve konumunu değiştirir.
             self.nearest_unit.is_it_on_duty = True
             self.nearest_unit.availability = False 
             self.nearest_unit.open_siren()
-            self.nearest_unit.update_location(incident_location) 
             return self.nearest_unit
         else:
             # Hiçbir araç bulunamazsa hata mesajı verir.
-            print(f"[-]: {unit_type} türünde müsait araç bulunamadı!")
+            print(f"[-]: {unit_type} türünde müsait araç bulunamadı!")  # DÜZELTİLDİ
             return None
 
-    def creating_intervention_plan(self, case, assigned_unit):
-        assigned_unit = self.nearest_unit
-
+    def creating_intervention_plan(self, case):
         # Her olay türü için yapılması gereken adım adım prosedürleri içeren liste.
+        
         plans = {
             "Yangın": [
                 "1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.",
@@ -147,24 +187,37 @@ class EmergencyService:
         for case_type, events in plans.items():
             if case == case_type:
                 # Olay yerine ulaşan birimin bilgisini verir.
-                print(f"[INFO] {assigned_unit.unit_id} ID'ye sahip {assigned_unit.unit_type} olay yerine intikal etti.")
+                if self.nearest_unit:
+                    print("="*30)
+                    print(f"[INFO] {self.nearest_unit.unit_id} ID'ye sahip {self.nearest_unit.unit_type} olay yerine intikal etti.")
+                    print("="*30)
+                    print("\n")
+                else:
+                    print("[UYARI] Hiçbir birim atanmamış!")
+                    return
+                    
+                print("="*30)
                 print(f"[INFO] Olay: {case_type}")
-                print(f"[INFO] Olaya müdahele planı oluşturuluyor...")
-                time.sleep(0.5)               
-                print(f"[INFO] Olaya müdahele planı oluşturuldu.")
+                print(f"[INFO] Olaya müdahale planı oluşturuluyor...")
+                time.sleep(2)               
+                print(f"[INFO] Olaya müdahale planı oluşturuldu.")
                 print(f"[INFO] Müdahaleye başlanıyor...")
-                time.sleep(0.5)
+                time.sleep(1.5)
                 print(f"[INFO] Müdahaleye başlandı...")
+                time.sleep(1.5)
 
                 # Planın her bir adımını sırayla bekleyerek ekrana yazdırır.
                 for event in events:
-                    time.sleep(1)
                     print(f">> {event}")
+                    time.sleep(2)
 
                 print("[INFO] Müdahale tamamlandı.")
+                time.sleep(2)
+                print("\n")
                 
                 # Sadece tehlikeli olaylarda ölü/yaralı raporu verir.
                 if case_type in ["Trafik Kazası", "Yangın", "Patlama", "Çökme"]:
+                     print("="*30)
                      print(f"[INFO] Yaralı Sayısı: {number_of_injured} - Ölü Sayısı: {death_toll}")
                 else:
                      print(f"[INFO] Yaralı/Ölü Yok.")
@@ -208,3 +261,6 @@ class EmergencyService:
                 with open(file_name, "w", encoding="utf-8") as f:
                     f.write("") 
                 print("Loglar temizlendi.")
+            
+            else:
+                print("! Geçersiz seçim.")
