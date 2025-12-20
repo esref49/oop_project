@@ -1,0 +1,39 @@
+[19:04:07] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:04:09] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:04:12] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:04:14] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:04:16] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:04:18] DURUM: Operasyon adımları tamamlandı.
+[19:04:20] SONUÇ RAPORU: Yaralı: 1 | Vefat: 1
+[19:05:17] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:05:19] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:05:22] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:05:24] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:05:26] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:05:28] DURUM: Operasyon adımları tamamlandı.
+[19:05:30] SONUÇ RAPORU: Yaralı: 2 | Vefat: 1
+[19:06:15] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:06:17] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:06:20] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:06:22] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:06:24] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:06:26] DURUM: Operasyon adımları tamamlandı.
+[19:06:28] SONUÇ RAPORU: Yaralı: 0 | Vefat: 0
+[19:08:03] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:08:05] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:08:08] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:08:10] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:08:12] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:08:14] DURUM: Operasyon adımları tamamlandı.
+[19:08:16] SONUÇ RAPORU: Yaralı: 0 | Vefat: 0
+[19:08:16] Birim merkeze dönüyor.
+ --------------------------------------------------
+[19:08:18] --- YENİ OPERASYON: Trafik Kazası | BİRİM: Polis (ID: 201) ---
+[19:08:20] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:08:23] ADIM UYGULANDI: 1. [İŞARET] Dubalarla yolu daralt, trafiği yavaşlat.
+[19:08:25] ADIM UYGULANDI: 2. [YARDIM] Yaralı varsa 112'ye haber ver, araçtan çıkarma.
+[19:08:27] ADIM UYGULANDI: 3. [TUTANAK] Kaza krokisini çiz ve tutanak tut.
+[19:08:29] DURUM: Operasyon adımları tamamlandı.
+[19:08:31] SONUÇ RAPORU: Yaralı: 3 | Vefat: 2
+[19:08:31] Birim merkeze dönüyor.
+ --------------------------------------------------
