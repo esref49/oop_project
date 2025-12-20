@@ -3,7 +3,7 @@ from app.modules.module_1.implementations import (
 )
 
 from app.modules.module_2.implementations import (
-    Base2SubClass1, Base2SubClass2
+    ElectricityMeter, WaterMeter, GasMeter
 )
 
 from app.modules.module_3.implementations import (
@@ -27,11 +27,12 @@ def run_demo():
 
     # Ogrenci 2 (Modul 2)
     base_2 = [
-        Base2SubClass1("parametre3"),
-        Base2SubClass2("parametre4")
+        ElectricityMeter("E-100", 150, "Musteri A", voltage=220),
+        WaterMeter("W-200", 25, "Musteri B"),
+        GasMeter("G-300", 100, "Musteri C")
     ]
     for n in base_2:
-        n.method2()
+        print(n.get_status())
 
         
     # Ogrenci 3 (Modul 3)
