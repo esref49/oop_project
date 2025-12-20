@@ -53,14 +53,6 @@ class SosyalHizmetServisi:
             self._islem_kaydet(f"Başvuru reddedildi: {vatandas['ad']}")
             return f"{vatandas['ad']}, {hizmet.name} için uygun değil."
     
-    # Çoklu başvuru oluşturan metod
-    def toplu_basvuru_olustur(self, vatandas_listesi, hizmet):
-        sonuclar = []
-        for vatandas in vatandas_listesi:
-            sonuc = self.basvuru_olustur(vatandas, hizmet)
-            sonuclar.append(sonuc)
-        return sonuclar
-    
     # Vatandaş için uygun hizmetleri bulan metod
     def uygun_hizmetleri_bul(self, vatandas):
         uygun_hizmetler = []
@@ -76,10 +68,6 @@ class SosyalHizmetServisi:
             return None
         en_yuksek_destek = max(uygun_hizmetler, key=lambda h: h.destek_hesapla())
         return en_yuksek_destek
-    
-    # Başvuruları listeleme metodu
-    def basvurulari_listele(self):
-        return self._repository.basvurulari_getir()
     
     # Onay bekleyen başvuruları getiren metod
     def bekleyen_basvurulari_getir(self):
@@ -123,12 +111,6 @@ class SosyalHizmetServisi:
     def vatandas_basvurulari(self, vatandas_adi):
         return self._repository.vatandasa_gore_basvurular(vatandas_adi)
     
-    # Vatandaşın toplam aldığı desteği hesaplayan metod
-    def vatandas_toplam_destek(self, vatandas_adi):
-        basvurular = self.vatandas_basvurulari(vatandas_adi)
-        toplam = sum(b.get("miktar", 0) for b in basvurular if b.get("durum") == "onaylandi")
-        return toplam
-    
     # Hizmet planı oluşturan metod
     def hizmet_plani_olustur(self, vatandas, baslangic_tarihi):
         uygun_hizmetler = self.uygun_hizmetleri_bul(vatandas)
@@ -168,21 +150,6 @@ class SosyalHizmetServisi:
         
         return basvuru_sonuc
     
-    # Periyodik hizmet kontrolü yapan metod
-    def periyodik_kontrol_yap(self, gun_sayisi=30):
-        son_tarih = datetime.now() - timedelta(days=gun_sayisi)
-        eski_basvurular = []
-        
-        for basvuru in self._repository.basvurulari_getir():
-            if basvuru.get("tarih", datetime.now()) < son_tarih:
-                eski_basvurular.append(basvuru)
-        
-        return {
-            "kontrol_edilen_gun": gun_sayisi,
-            "eski_basvuru_sayisi": len(eski_basvurular),
-            "eski_basvurular": eski_basvurular
-        }
-    
     # Hizmet performansını değerlendiren metod
     def hizmet_performansi_analiz(self, hizmet_adi):
         basvurular = self._repository.hizmete_gore_basvurular(hizmet_adi)
@@ -200,32 +167,6 @@ class SosyalHizmetServisi:
             "reddedilen": reddedilen,
             "onay_orani": (onaylanan / toplam * 100) if toplam > 0 else 0,
             "red_orani": (reddedilen / toplam * 100) if toplam > 0 else 0
-        }
-    
-    # Tüm hizmetlerin performansını karşılaştıran metod
-    def hizmet_karsilastirma_raporu(self):
-        hizmetler = self._repository.hizmetleri_getir()
-        rapor = []
-        
-        for hizmet in hizmetler:
-            analiz = self.hizmet_performansi_analiz(hizmet.name)
-            if analiz:
-                rapor.append(analiz)
-        
-        return sorted(rapor, key=lambda x: x["onay_orani"], reverse=True)
-    
-    # Bütçe tahmini yapan metod
-    def butce_tahmini_yap(self, gelecek_ay_sayisi=3):
-        mevcut_ortalama = self._repository.ortalama_destek_tutari()
-        aylik_basvuru_sayisi = len(self._repository.basvurulari_getir()) / 12
-        
-        tahmini_butce = mevcut_ortalama * aylik_basvuru_sayisi * gelecek_ay_sayisi
-        
-        return {
-            "tahmini_ay_sayisi": gelecek_ay_sayisi,
-            "aylik_ortalama_destek": mevcut_ortalama,
-            "aylik_tahmini_basvuru": aylik_basvuru_sayisi,
-            "toplam_tahmini_butce": tahmini_butce
         }
     
     # İstatistiksel rapor oluşturan metod
@@ -254,13 +195,6 @@ class SosyalHizmetServisi:
     def okunmamis_bildirimler(self):
         return [b for b in self._bildirimler if not b.get("okundu", False)]
     
-    # Bildirimi okundu olarak işaretleyen metod
-    def bildirimi_okundu_isaretle(self, bildirim_index):
-        if 0 <= bildirim_index < len(self._bildirimler):
-            self._bildirimler[bildirim_index]["okundu"] = True
-            return True
-        return False
-    
     # İşlem geçmişi kaydeden private metod
     def _islem_kaydet(self, mesaj):
         islem = {
@@ -285,20 +219,6 @@ class SosyalHizmetServisi:
             "sistem_durumu": "saglikli"
         }
     
-    # Detaylı rapor oluşturan metod
-    def detayli_rapor_olustur(self, baslangic_tarihi, bitis_tarihi):
-        basvurular = self._repository.tarih_araligina_gore_basvurular(baslangic_tarihi, bitis_tarihi)
-        
-        return {
-            "baslangic": baslangic_tarihi,
-            "bitis": bitis_tarihi,
-            "toplam_basvuru": len(basvurular),
-            "onaylanan": len([b for b in basvurular if b.get("durum") == "onaylandi"]),
-            "reddedilen": len([b for b in basvurular if b.get("durum") == "reddedildi"]),
-            "bekleyen": len([b for b in basvurular if b.get("durum") == "beklemede"]),
-            "toplam_destek": sum(b.get("miktar", 0) for b in basvurular if b.get("durum") == "onaylandi")
-        }
-    
     # String temsilini döndüren metod
     def __str__(self):
         return f"SosyalHizmetServisi(basvurular={self._repository.toplam_basvuru_sayisi()})"
@@ -307,11 +227,6 @@ class SosyalHizmetServisi:
     @classmethod
     def servis_sayisi(cls):
         return cls._servis_sayisi
-    
-    # Yeni servis oluşturan class metodu
-    @classmethod
-    def yeni_servis_olustur(cls, repository):
-        return cls(repository)
     
     # Servis sayısını sıfırlayan class metodu
     @classmethod
