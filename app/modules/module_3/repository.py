@@ -2,26 +2,55 @@ import datetime
 
 class EmergencyRepository():
     def __init__(self):
-        self.save_cases = {}
         self.old_cases = {}
         self.unit = {}
-        self.case_counter = 0
+        self.case_counter = self.get_last_case_id()
+
+    def get_last_case_id(self):
+        file_name = "old_case_logs.txt"
+        try:
+            with open(file_name, "r", encoding="utf-8") as f:
+                content = f.read()
+                # Dosyada kaç kere 'ID: Olay-' geçtiğini sayıyoruz.
+                # Mesela 5 kayıt varsa, sayaç 5 olacak. Yeni kayıt 6 diye devam edecek.
+                count = content.count("ID: Olay-")
+                return count
+        except FileNotFoundError:
+            # Dosya yoksa henüz ilk olaydır.
+            return 0
 
     def save_case(self, case_data):
         self.case_counter += 1
-        time = datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
+        current_time = datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
+        
+        # --- GÖRSEL DÜZENLEME ---
+        # f-string içinde çok satırlı metin (multiline string) kullanıyoruz.
+        # "=" ve "-" işaretleriyle güzel bir çerçeve yapıyoruz.
+        log_block = f"""
+==================================================
+[VAKA KAYIT RAPORU] - ID: Olay-{self.case_counter}
+==================================================
+Tarih             : {current_time}
+Olay Türü         : {case_data.get('type', 'Belirtilmedi')}
+Olay Konumu       : {case_data.get('location', 'Bilinmiyor')}
+--------------------------------------------------
+Ciddiyet Seviyesi : {case_data.get('severity', 0)} / 10
+Kritik Durum      : {case_data.get('critical_status', '-')}
+Gereken Ekipler   : {case_data.get('needed_unit_types', [])}
+--------------------------------------------------
+Atanan Birimler   : {case_data.get('assigned_unit_ids', 'Atama Yapılamadı')}
+Vaka Durumu       : {case_data.get('status', 'Aktif')}
+==================================================
+"""
 
-        log = (
-            f"[{time}] | "
-            f"ID: Olay-{self.case_counter} | "
-            f"Tür: {case_data.get('type', 'Bilinmiyor')} | "
-            f"Konum: {case_data.get('location', '-')} | "
-            f"Puan: {case_data.get('severity', 0)} | "
-            f"Durum: {case_data.get('status', 'Aktif')} | "
-            f"Birim: {case_data.get('assigned_unit', 'Atanmadı')}"
-        )
-
-        self.save_cases[f"Olay {self.case_counter}"] = log
+        try:
+            with open("old_case_logs.txt", "a", encoding="utf-8") as file:
+                file.write(log_block + "\n") # Her rapordan sonra bir boşluk bırakalım.
+            
+            print(f"[LOG] Olay-{self.case_counter} başarıyla dosyaya işlendi.")
+            
+        except Exception as e:
+            print(f"[HATA] Dosyaya yazarken sorun çıktı: {e}")
 
     def event_history(self, message):
         now = datetime.datetime.now().strftime("%H:%M:%S")
