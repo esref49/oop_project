@@ -1,0 +1,27 @@
+[19:38:03] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:38:05] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:38:08] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:38:10] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:38:12] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:38:14] DURUM: Operasyon adımları tamamlandı.
+[19:38:16] SONUÇ RAPORU: Yaralı: 3 | Vefat: 1
+[19:38:16] Birim merkeze dönüyor.
+ --------------------------------------------------
+[21:09:16] --- YENİ OPERASYON: Sel/Su Baskını | BİRİM: İtfaiye (ID: 301) ---
+[21:09:18] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[21:09:21] ADIM UYGULANDI: 1. [ENERJİ] Elektrik hatlarını ana şalterden kapat.
+[21:09:23] ADIM UYGULANDI: 2. [TAHLİYE] Vatandaşları çatı veya yüksek bölgelere al.
+[21:09:25] ADIM UYGULANDI: 3. [TAHLİYE 2] Motopompları kur ve suyu tahliye et.
+[21:09:27] DURUM: Operasyon adımları tamamlandı.
+[21:09:29] SONUÇ RAPORU: Herhangi bir yaralanma veya can kaybı yok.
+[21:09:29] Birim merkeze dönüyor.
+ --------------------------------------------------
+[21:32:13] --- YENİ OPERASYON: Trafik Kazası | BİRİM: Polis (ID: 101) ---
+[21:32:15] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[21:32:18] ADIM UYGULANDI: 1. [İŞARET] Dubalarla yolu daralt, trafiği yavaşlat.
+[21:32:20] ADIM UYGULANDI: 2. [YARDIM] Yaralı varsa 112'ye haber ver, araçtan çıkarma.
+[21:32:22] ADIM UYGULANDI: 3. [TUTANAK] Kaza krokisini çiz ve tutanak tut.
+[21:32:24] DURUM: Operasyon adımları tamamlandı.
+[21:32:26] SONUÇ RAPORU: Yaralı: 5 | Vefat: 0
+[21:32:26] Birim merkeze dönüyor.
+ --------------------------------------------------

@@ -10,10 +10,12 @@ if __name__ == "__main__":
     from app.modules.module_4.implementations import GidaYardimi, BarinmaDestegi, EgitimDestegi
     from app.modules.module_4.repository import SosyalHizmetRepository
     from app.modules.module_4.services import SosyalHizmetServisi
+    from app.modules.module_4.ai_assistant import SosyalHizmetAI
 else:
     from .implementations import GidaYardimi, BarinmaDestegi, EgitimDestegi
     from .repository import SosyalHizmetRepository
     from .services import SosyalHizmetServisi
+    from .ai_assistant import SosyalHizmetAI
 
 def main():
     print("=" * 60)
@@ -291,7 +293,26 @@ def main():
     print("=" * 60)
     print("DEMO EXECUTION COMPLETED")
     print("=" * 60)
+    print()
+    
+    # AI ASISTAN MODÜLÜ
+    print("=" * 60)
+    print("AI ASISTAN AKTİF - İnteraktif Mod Başlatılıyor")
+    print("=" * 60)
+    
+    ai = SosyalHizmetAI(repo, servis)
+    
+    # Örnek sorgular
+    print("\nÖrnek Sorgular:\n")
+    print(ai.sor("Bugün kimler başvurdu?"))
+    print("\n" + "-"*60 + "\n")
+    print(ai.sor("İstatistikleri göster"))
+    print("\n" + "-"*60 + "\n")
+    
+    # İnteraktif mod başlat
+    ai.interaktif_mod()
 
 # Demo'yu çalıştırma
 if __name__ == "__main__":
+    main()
     main()

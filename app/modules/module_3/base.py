@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class EmergencyUnit(ABC):
-    def __init__(self, unit_id, unit_type, current_location, availability, fuel_level, is_enough_staff, is_siren_on = False, is_it_on_duty = False):
+    def __init__(self, unit_id, unit_type, current_location, availability, fuel_level, is_enough_staff, is_siren_on = False, is_it_on_duty = False, max_fuel_level = 50):
         self.__unit_id = unit_id
         self.unit_type = unit_type
         self.current_location = current_location
@@ -10,6 +10,7 @@ class EmergencyUnit(ABC):
         self.is_enough_staff = is_enough_staff
         self.is_siren_on = is_siren_on
         self.is_it_on_duty = is_it_on_duty
+        self.max_fuel_level = max_fuel_level
 
     @property
     def unit_id(self):
@@ -21,30 +22,35 @@ class EmergencyUnit(ABC):
 
     @abstractmethod
     def update_location(self):
-        # Birimin konumunu güncelleme
+        # Birimin konumunu günceller
         pass
 
     @abstractmethod
     def open_siren(self):
-        # Birimin konumunu güncelleme
+        # Birimin sirenini açar
         pass
 
     @abstractmethod
     def report_location(self):
-        # Konumu bildirir
-        pass
-
-    @abstractmethod
-    def report_status(self):
-        # Durum bildirir
+        # Birimin konumunu bildirir
         pass
     
     @abstractmethod
     def report_fault(self):
-        # Arıza bildirimi yapar
+        # Birimin arıza bildirimini yapar
         pass
 
     @abstractmethod
     def determine_availability(self):
-        # Müsaitlik durumunu belirler
+        # Birimin müsaitlik durumunu belirler
+        pass
+
+    @abstractmethod
+    def get_detailed_status(self):
+        # Birime özel araç kimlik kartı oluşturur
+        pass
+    
+    @abstractmethod
+    def refill_tank(self):
+        # Birimim depolarını doldurur
         pass

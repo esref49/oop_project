@@ -1,0 +1,85 @@
+
+==================================================
+         CANLI FİLO TAKİP SİSTEMİ
+         Rapor Saati : 20-12-2025 19:08:32
+         Araç Sayısı : 5
+==================================================
+
+
+--------------------------------------------------
+[AMBULANS KİMLİK KARTI]
+Araç Id                 : 101
+Araç Türü               : Ambulans
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 2
+Benzin Seviyesi         : 80
+Tıbbi Malzeme           : 90
+Sterilizasyon           : Evet
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[AMBULANS KİMLİK KARTI]
+Araç Id                 : 102
+Araç Türü               : Ambulans
+Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
+Mevcut Konum            : 18
+Benzin Seviyesi         : 40
+Tıbbi Malzeme           : 50
+Sterilizasyon           : Hayır
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS EKİBİ KİMLİK KARTI]
+Araç Id                 : 201
+Araç Türü               : Polis
+Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
+Mevcut Konum            : 5
+Benzin Seviyesi         : 60
+Uzmanlık Alanı          : Asayiş
+Devriye Bölgesi         : Merkez
+Tutuklu Sayısı          : 0
+GBT Sorgu Sayısı        : 0
+Personel Durumu         : Yeterli
+Görevde mi              : Evet
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS EKİBİ KİMLİK KARTI]
+Araç Id                 : 202
+Araç Türü               : Polis
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 15
+Benzin Seviyesi         : 65
+Uzmanlık Alanı          : Trafik
+Devriye Bölgesi         : Otoban
+Tutuklu Sayısı          : 0
+GBT Sorgu Sayısı        : 0
+Personel Durumu         : Yeterli
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE ARACI KİMLİK KARTI]
+Araç Id                 : 301
+Araç Türü               : İtfaiye
+Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
+Mevcut Konum            : 8
+Benzin Seviyesi         : 85 lt
+Depodaki Su Seviyesi    : 100 lt
+Depodaki Köpük Seviyesi : 100 lt
+Merdiven Uzunluğu       : 20 m
+Personel Durumu         : Yeterli
+Siren Durumu            : Açık
+Görevde mi              : Evet
+--------------------------------------------------
+
