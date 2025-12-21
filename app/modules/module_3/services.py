@@ -1,3 +1,4 @@
+import os
 import time
 import numpy as np
 
@@ -17,7 +18,7 @@ class EmergencyService:
         # En yakın birimi bul
         self.nearest_unit = self.finding_the_nearest_unit(unit_list, self.get_unit_type_for_case(case_type))
         
-        # Vaka bilgilerini sözlük içinde toplar.
+        # Vaka bilgilerini sözlük içinde toplar
         new_case = {
             "location": self.location,
             "type": case_type,
@@ -28,7 +29,7 @@ class EmergencyService:
             "assigned_unit_id": self.nearest_unit.unit_id if self.nearest_unit else None
         }
         
-        # Yeni vakanın oluştuğu bilgisini verir.
+        # Yeni vakanın oluştuğu bilgisini verir
         print("="*30)
         print(f"Vaka konumu: {new_case['location']}")
         print(f"Vaka türü: {new_case['type']}")
@@ -66,41 +67,42 @@ class EmergencyService:
         return case_to_unit.get(case_type, "")
         
     def finding_the_nearest_unit(self, unit_list, unit_type):
-        # En yakın aracı bulmak için başlangıç değişkenlerini tanımlar.
+        # En yakın aracı bulmak için başlangıç değişkenlerini tanımlar
         min_distance = 999999999999
-        self.nearest_unit = None  # Reset each time
+        self.nearest_unit = None
 
-        # Verilen listedeki tüm araçları tek tek kontrol eder.
+        # Verilen listedeki tüm araçları tek tek kontrol eder
         for unit in unit_list: 
-            # Aracın müsait olup olmadığını ve olay tipine uygunluğunu kontrol eder.
+            # Aracın müsait olup olmadığını ve olay tipine uygunluğunu kontrol eder
             if unit.availability and unit.unit_type == unit_type:
                 # Olay yeri ile araç arasındaki mesafeyi hesaplar.
                 distance = abs(unit.current_location - self.location) 
 
-                # Eğer bu araç daha önce bulunanlardan daha yakınsa, en yakın olarak bunu seçer.
+                # Eğer bu araç daha önce bulunanlardan daha yakınsa, en yakın olarak bunu seçer
                 if distance < min_distance:
                     min_distance = distance
                     self.nearest_unit = unit
                     
-        # Eğer uygun bir araç bulunduysa sevk işlemlerini başlatır.
+        # Eğer uygun bir araç bulunduysa sevk işlemlerini başlatır
         if self.nearest_unit:
             print("\n")
             print("="*30)
-            print("[INFO] Yeni vaka oluşturuldu")
-            print(f"[INFO] {self.nearest_unit.unit_id} kodlu {self.nearest_unit.unit_type} olay yerine sevk ediliyor.")
-            print(f"[INFO] Tahmini Mesafe: {min_distance} km")
-            print(f"[INFO] {self.nearest_unit.unit_type} biriminin anlık konumu: {self.nearest_unit.current_location}") 
+            print("[BİLGİ] Yeni vaka oluşturuldu")
+            print(f"[BİLGİ] {self.nearest_unit.unit_id} kodlu {self.nearest_unit.unit_type} olay yerine sevk ediliyor.")
+            print(f"[BİLGİ] Tahmini Mesafe: {min_distance} km")
+            print(f"[BİLGİ] {self.nearest_unit.unit_type} biriminin anlık konumu: {self.nearest_unit.current_location}") 
             print("="*30)
             print("\n")
             
-            # Aracın durumunu günceller: Göreve çıkarır, meşgul yapar, sireni açar ve konumunu değiştirir.
+            # Aracın durumunu günceller: Göreve çıkarır, meşgul yapar, sireni açar ve konumunu değiştirir
             self.nearest_unit.is_it_on_duty = True
             self.nearest_unit.availability = False 
+            # Çok biçimlilik örneği
             self.nearest_unit.open_siren()
             return self.nearest_unit
         else:
-            # Hiçbir araç bulunamazsa hata mesajı verir.
-            print(f"[-]: {unit_type} türünde müsait araç bulunamadı!")  # DÜZELTİLDİ
+            # Hiçbir araç bulunamazsa hata mesajı verir
+            print(f"[BİLGİ]: {unit_type} türünde müsait araç bulunamadı!")
             return None
 
     def creating_intervention_plan(self, case):
@@ -179,21 +181,20 @@ class EmergencyService:
             ]
         }
 
-        # Olayın sonucunda oluşacak rastgele ölü ve yaralı sayılarını belirler
+        # Olayın sonucunda oluşacak ölü ve yaralı sayılarını belirler
         number_of_injured = np.random.choice([0,1,2,3,0,0,0,5])
         death_toll = np.random.choice([0,1,2,3,0,0,1])
     
         # Gelen olay türünü listede arar ve ilgili planı uygular
         for case_type, events in plans.items():
             if case == case_type:
-                # Olay yerine ulaşan birimin bilgisini verir
                 if self.nearest_unit:
                     # Vakayı tüm adımlarıyla birlikte kaydeder
                     msg_header = f"--- YENİ OPERASYON: {case_type} | BİRİM: {self.nearest_unit.unit_type} (ID: {self.nearest_unit.unit_id}) ---"
                     self.repository.save_event_history(msg_header)
 
                     print("="*30)
-                    print(f"[INFO] {self.nearest_unit.unit_id} ID'ye sahip {self.nearest_unit.unit_type} olay yerine intikal etti.")
+                    print(f"[BİLGİ] {self.nearest_unit.unit_id} ID'ye sahip {self.nearest_unit.unit_type} olay yerine intikal etti.")
                     print("="*30)
                     print("\n")
                 else:
@@ -201,27 +202,27 @@ class EmergencyService:
                     return
                     
                 print("="*30)
-                print(f"[INFO] Olay: {case_type}")
-                print(f"[INFO] Olaya müdahale planı oluşturuluyor...")
+                print(f"[BİLGİ] Olay: {case_type}")
+                print(f"[BİLGİ] Olaya müdahale planı oluşturuluyor...")
                 time.sleep(2)               
-                print(f"[INFO] Olaya müdahale planı oluşturuldu.")
-                print(f"[INFO] Müdahaleye başlanıyor...")
+                print(f"[BİLGİ] Olaya müdahale planı oluşturuldu.")
+                print(f"[BİLGİ] Müdahaleye başlanıyor...")
                 
-                self.repository.save_event_history(f"DURUM: Plan oluşturuldu, müdahale başlıyor.")
+                self.repository.save_event_history(f"[BİLGİ] Plan oluşturuldu, müdahale başlıyor.")
                 
                 time.sleep(1.5)
-                print(f"[INFO] Müdahaleye başlandı...")
+                print(f"[BİLGİ] Müdahaleye başlandı...")
                 time.sleep(1.5)
 
                 # Planın her bir adımını sırayla bekleyerek ekrana yazdırır
                 for event in events:
-                    print(f">> {event}")
+                    print(f"---> {event}")
                     self.repository.save_event_history(f"ADIM UYGULANDI: {event}")
                     time.sleep(2)
 
-                print("[INFO] Müdahale tamamlandı.")
+                print("[BİLGİ] Müdahale tamamlandı.")
                 # --- REPOSITORY KAYDI ---
-                self.repository.save_event_history("DURUM: Operasyon adımları tamamlandı.")
+                self.repository.save_event_history("[BİLGİ] Operasyon adımları tamamlandı.")
                 
                 time.sleep(2)
                 print("\n")
@@ -229,59 +230,140 @@ class EmergencyService:
                 # Sadece tehlikeli olaylarda ölü/yaralı raporu verir
                 if case_type in ["Trafik Kazası", "Yangın", "Patlama", "Çökme"]:
                      print("="*30)
-                     report_msg = f"[INFO] Yaralı Sayısı: {number_of_injured} - Ölü Sayısı: {death_toll}"
+                     report_msg = f"[SONUÇ RAPORU] Yaralı Sayısı: {number_of_injured} - Ölü Sayısı: {death_toll}"
                      print(report_msg)
-                     self.repository.save_event_history(f"SONUÇ RAPORU: Yaralı: {number_of_injured} | Vefat: {death_toll}")
+                     self.repository.save_event_history(f"[SONUÇ RAPORU] Yaralı: {number_of_injured} | Vefat: {death_toll}")
                 else:
-                     print(f"[INFO] Yaralı/Ölü Yok.")
-                     self.repository.save_event_history("SONUÇ RAPORU: Herhangi bir yaralanma veya can kaybı yok.")
+                     print(f"[SONUÇ RAPORU] Yaralı/Ölü Yok.")
+                     self.repository.save_event_history("[SONUÇ RAPORU] Herhangi bir yaralanma veya can kaybı yok.")
 
                 # Birimin görevini tamamlayıp ayrıldığını bildirir
-                print(f"[INFO] Birim olay yerinden ayrılıyor...")
+                print(f"[BİLGİ] Birim olay yerinden ayrılıyor...")
                 # Yaptığı tüm işlemleri hem ekrana hem de veritabanına kaydeder ve 50 tane - ile kaydı bitirir
                 self.repository.save_event_history(f"Birim merkeze dönüyor.\n {"-"*50}")
 
                 # İşlemleri tamamlar ve döngüden çıkar
                 break
 
+    # Log yönetim paneli
     def event_log_management(self):
-        file_name = "old_case_logs.txt"
-        
-        # Konsol menüsüyle logları yönetiyoruz.
         while True:
-            print("\n--- LOG PANELİ: 1-Oku, 2-Hata Bul, 3-Sil, 4-Çık ---")
-            text = input("Seçim: ")
+            print("\n" + "="*40)
+            print("📂 LOG YÖNETİM PANELİ")
+            print("="*40)
+            print(" [1] 📋 Vaka Geçmişi (Case Log)")
+            print(" [2] 🚒 Filo Durumu (Units Log)")
+            print(" [3] ⚡ Sistem Hareketleri (Event History)")
+            print(" [4] 🔙 Ana Menüye Dön")
+            print("-" * 40)
+            
+            text = input("👉 Dosya Seçiniz: ")
 
-            if text == "":
-                print("! Boş seçim yapma.")
-            
-            elif text in ["4", "çıkış", "q"]:
+            if text == "4":
+                print("Log panelinden çıkılıyor...")
                 break
-            
-            elif text == "1":
-                try:
-                    with open(file_name, "r", encoding="utf-8") as f:
-                        print(f.read())
-                except FileNotFoundError:
-                    print("! Henüz log oluşmamış.")
-            
+
+            target_file = ""
+            if text == "1":
+                target_file = self.repository.file_name
             elif text == "2":
-                try:
-                    with open(file_name, "r", encoding="utf-8") as f:
-                        for line in f:
-                            # Sadece hataları filtreliyoruz.
-                            if "HATA" in line: 
-                                print(line.strip())
-                except FileNotFoundError:
-                    print("! Henüz log oluşmamış.")
-            
+                target_file = self.repository.status_file
             elif text == "3":
-                with open(file_name, "w", encoding="utf-8") as f:
-                    f.write("") 
-                print("Loglar temizlendi.")
-            
+                target_file = self.repository.event_history_file
             else:
-                print("! Geçersiz seçim.")
+                print("[HATA] Geçersiz seçim.")
+                continue
+
+            while True:
+                print(f"\n--- İŞLEM MENÜSÜ: {target_file} ---")
+                print(" 1- Oku (Tümünü Göster)")
+                print(" 2- Hata Bul (Sadece 'HATA' satırları)")
+                print(" 3- Sil (Dosyayı Temizle)")
+                print(" 4- Geri Dön (Dosya Seçimine)")
+
+                text = input("Seçim: ")
+
+                # okuma
+                if text == "1":
+                    try:
+                        if os.path.exists(target_file):
+                            print(f"\n📄 DOSYA İÇERİĞİ:\n" + "-"*30)
+                            with open(target_file, "r", encoding="utf-8") as f:
+                                print(f.read())
+                            print("-" * 30)
+                        else:
+                            print("[BİLGİ] Dosya henüz oluşmamış")
+                    except Exception as e:
+                        print(f"[HATA] Okuma hatası: {e}")
+
+                # hata bulma
+                elif text == "2":
+                    try:
+                        if os.path.exists(target_file):
+                            print(f"\n🔍 BULUNAN HATALAR:\n" + "-"*30)
+                            found = False
+                            with open(target_file, "r", encoding="utf-8") as f:
+                                for line in f:
+                                    if "HATA" in line.upper() or "FAIL" in line.upper() or "ERROR" in line.upper():
+                                        print("🔴 " + line.strip())
+                                        found = True
+                            if not found:
+                                print("✅ Hata kaydı bulunamadı")
+                            print("-" * 30)
+                        else:
+                            print("[BİLGİ] Dosya henüz oluşmamış")
+                    except Exception as e:
+                         print(f"[HATA] Okuma hatası: {e}")
+
+                # silme
+                elif text == "3":
+                    onay = input("⚠️ Dosya içeriği tamamen silinecek! Emin misin? (E/H): ").upper()
+                    if onay == "E":
+                        with open(target_file, "w", encoding="utf-8") as f:
+                            f.write("") 
+                        print("[BİLGİ] Loglar temizlendi. ✅")
+                    else:
+                        print("[BİLGİ] İşlem iptal edildi.")
+
+                # çık
+                elif text == "4":
+                    break 
+                
+                else:
+                    print("[UYARI] Geçersiz seçim.")
+
+    def set_unit_in_service(self, target_unit, all_units):
+        if target_unit.availability:
+            print(f"\n[BİLGİ] {target_unit.unit_id} ID'li araç zaten hizmette ve müsait.")
+            return
+
+        # Durumları günceller
+        target_unit.availability = True
+        target_unit.is_it_on_duty = False  # Görevden döndü varsayıyoruz
+        target_unit.is_siren_on = False    # Sirenleri kapat
+        
+        print(f"\n[İŞLEM] {target_unit.unit_type} (ID: {target_unit.unit_id}) başarıyla HİZMETE ALINDI. ✅")
+        print("[SİSTEM] Araç listesi güncelleniyor...")
+        
+        # Değişikliği anında veritabanına işler
+        self.repository.save_unit_info(all_units)
+
+    def set_unit_out_of_service(self, target_unit, all_units, reason):
+        if not target_unit.availability:
+            print(f"\n[BİLGİ] {target_unit.unit_id} ID'li araç zaten hizmet dışı.")
+            return
+
+        # Durumları güncelle
+        target_unit.availability = False
+        target_unit.is_it_on_duty = False # Görevde değil, sadece pasif
+        target_unit.is_siren_on = False
+        
+        print(f"\n[İŞLEM] {target_unit.unit_type} (ID: {target_unit.unit_id}) HİZMET DIŞI bırakıldı. ⛔")
+        print(f"        Sebep: {reason}")
+        print("[SİSTEM] Araç listesi güncelleniyor...")
+
+        # Değişikliği anında veritabanına işler
+        self.repository.save_unit_info(all_units)
 
     def manage_unit_status(self, all_units):
         print("\n" + "="*45)
@@ -316,27 +398,43 @@ class EmergencyService:
             print("-" * 45)
             print("  [1] ✅ Hizmete Al (Operasyona Hazırla)")
             print("  [2] ⛔ Hizmet Dışı Bırak (Bakım/Mola/Arıza)")
-            print("  [3] 🔙 İptal")
+            print("  [3] 🔧 Bakım/Onarım Yap")
+            print("  [4] 🔙 İptal")
             print("-" * 45)
             
             secim = input("Kararınız: ")
             
             if secim == "1":
-                # Daha önce yazdığımız hizmete alma fonksiyonunu çağırıyoruz
                 self.set_unit_in_service(target_unit, all_units)
                 
             elif secim == "2":
                 reason = input("Hizmet dışı bırakma sebebi nedir? (Örn: Yemek Molası): ")
-                # Daha önce yazdığımız hizmet dışı bırakma fonksiyonunu çağırıyoruz
                 self.set_unit_out_of_service(target_unit, all_units, reason)
                 
             elif secim == "3":
-                print("İşlem iptal edildi.")
+                print(f"\n[BAKIM] {target_unit.unit_id} nolu araç için bakım prosedürü başlatılıyor...")
+                time.sleep(1)
+                
+                # Çok biçimlili örneği
+                target_unit.refill_tank()
+                
+                # Eğer araçta arıza varsa düzeltir
+                if hasattr(target_unit, 'is_broken'):
+                    target_unit.is_broken = False
+                
+                # Kayıt yapar
+                print("[BAKIM] Tüm depolar dolduruldu ve mekanik kontroller yapıldı")
+                self.repository.save_unit_info(all_units)
+                self.repository.save_event_history(f"[BAKIM] {target_unit.unit_id} serviste bakımdan geçti")
+
+            elif secim == "4":
+                print("[BİLGİ] İşlem iptal edildi, ana menüye dönülüyor.")
+                
             else:
-                print("! Geçersiz seçim yaptınız.")
+                print("[HATA] Geçersiz seçim yaptınız.")
                 
         else:
-            print("! Bu ID numarasına sahip bir araç bulunamadı.")
+            print("[HATA] Bu ID numarasına sahip bir araç bulunamadı.")
 
     def delete_unit_log(self):
         id = int(input("Silinecek aracın ID: "))

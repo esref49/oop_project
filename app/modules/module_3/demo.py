@@ -7,13 +7,13 @@ from app.modules.module_3.implementations import AmbulanceUnit, PoliceUnit, Fire
 
 def main():
     
-    print("="*50)
+    print("\n"+"="*50)
     print("[SİSTEM] Sistem başlatılıyor...")
     print("[SİSTEM] Veritabanı bağlantısı kontrol ediliyor...")
     time.sleep(2)
     repository = EmergencyRepository()
     service = EmergencyService(repository)
-    print("[SİSTEM] Veritabanı başarılı bir şekilde bağlandı\n")
+    print("[SİSTEM] Veritabanı başarılı bir şekilde bağlandı")
     print("[SİSTEM] Araçlar hizmete alınıyor...")
     time.sleep(2)
 
@@ -40,41 +40,40 @@ def main():
     print("="*50 + "\n")
 
     while True:
-        clearscreen()
-        print(f"Aktif Araç Sayısı: {len(units)} | Son Vaka ID: {repo.get_last_case_id()}")
+        print(f"Aktif Araç Sayısı: {len(units)}")
         print("-" * 40)
-        print(" [1] 🆘 ACİL İHBAR GİRİŞİ (Vaka Oluştur)")
-        print(" [2] 🚓 CANLI FİLO DURUMU (Listele)")
-        print(" [3] 🛠️ ARAÇ YÖNETİMİ (Bakım/Statü Değiştir)")
-        print(" [4] ➕ YENİ EKİP EKLE (Envantere Kayıt)")
-        print(" [5] 🗑️ ARAÇ SİL (Envanterden Düş)")
-        print(" [6] 📂 SİSTEM LOGLARINI OKU")
-        print(" [Q] ❌ ÇIKIŞ")
+        print(" [1] 🆘  ACİL İHBAR GİRİŞİ (Vaka Oluştur)")
+        print(" [2] 🚓  CANLI FİLO DURUMU (Listele)")
+        print(" [3] 🛠️  ARAÇ YÖNETİMİ (Bakım/Statü Değiştir)")
+        print(" [4] ➕  YENİ EKİP EKLE (Envantere Kayıt)")
+        print(" [5] 🗑️  ARAÇ SİL (Envanterden Düş)")
+        print(" [6] 📂  LOG PANELİ")
+        print(" [Q] ❌  ÇIKIŞ")
         print("-" * 40)
         
-        secim = input("👉 İşlem Seçiniz: ").upper()
+        text = input("👉 İşlem Seçiniz: ").upper()
         
-        # --- SEÇENEK 1: VAKA OLUŞTURMA ---
-        if secim == "1":
+        # Vaka Oluşturma
+        if text == "1":
             print("\n--- 🆘 YENİ VAKA GİRİŞİ ---")
             print("Vaka Türleri: Yangın, Trafik Kazası, Kalp Krizi, Hırsızlık, Sel/Su Baskını")
-            v_tur = input("Olay Türü: ")
+            case_type = input("Olay Türü: ")
             
             try:
-                v_sev = int(input("Ciddiyet Seviyesi (1-10): "))
-                # Servis katmanını çağırıyoruz
-                service.creating_case(v_tur, v_sev, units)
+                severity = int(input("Ciddiyet Seviyesi (1-10): "))
+                # Servis katmanını çağırır
+                service.creating_case(case_type, severity, units)
                 
-                # İşlemi kaydediyoruz
+                # İşlemi kaydeder
                 repo.save_unit_info(units) 
                 
             except ValueError:
-                print("! Hata: Seviye sayı olmalı.")
+                print("[HATA] Seviye sayı olmalı.")
             
             input("\nDevam etmek için Enter'a basın...")
 
-        # --- SEÇENEK 2: FİLO LİSTELEME ---
-        elif secim == "2":
+        # Sistemdeki tüm araçları gösterir
+        elif text == "2":
             print("\n--- 🚓 FİLO DURUM RAPORU ---")
             print(f"{'ID':<10} {'TÜR':<15} {'KONUM':<10} {'DURUM'}")
             print("-" * 50)
@@ -84,82 +83,73 @@ def main():
             
             input("\nDevam etmek için Enter'a basın...")
 
-        # --- SEÇENEK 3: BAKIM / STATÜ ---
-        elif secim == "3":
-            # Senin yazdığın 'manage_unit_status' fonksiyonunu kullanıyoruz
+        # Sistemdeki araçları yönetir
+        elif text == "3":
             service.manage_unit_status(units)
             repo.save_unit_info(units)
             input("\nDevam etmek için Enter'a basın...")
 
-        # --- SEÇENEK 4: YENİ ARAÇ EKLEME ---
-        elif secim == "4":
+        # Sisteme yeni araç ekler
+        elif text == "4":
             print("\n--- ➕ YENİ EKİP EKLEME ---")
-            tur = input("Araç Türü (A: Ambulans / P: Polis / I: İtfaiye): ").upper()
+            unit_type = input("Araç Türü (A: Ambulans / P: Polis / I: İtfaiye): ").upper()
             try:
                 u_id = int(input("Araç ID (Örn: 101): "))
-                loc = int(input("Başlangıç Konumu (0-20): "))
+                location = int(input("Başlangıç Konumu (0-20): "))
                 
-                yeni_arac = None
-                if tur == "A":
-                    yeni_arac = AmbulanceUnit(u_id, 100, True, 100, True, current_location=loc)
-                elif tur == "P":
-                    yeni_arac = PoliceUnit(u_id, 100, True, "Merkez", current_location=loc)
-                elif tur == "I":
-                    yeni_arac = FireFightingUnit(u_id, 100, True, 100, 100, current_location=loc)
+                new_unit = None
+                if unit_type == "A":
+                    new_unit = AmbulanceUnit(u_id, 100, True, 100, True, current_location=location)
+                elif unit_type == "P":
+                    new_unit = PoliceUnit(u_id, 100, True, "Merkez", current_location=location)
+                elif unit_type == "I":
+                    new_unit = FireFightingUnit(u_id, 100, True, 100, 100, current_location=location)
                 else:
-                    print("! Geçersiz tür.")
+                    print("[HATA] Geçersiz tür")
                 
-                if yeni_arac:
-                    units.append(yeni_arac)
+                if new_unit:
+                    units.append(new_unit)
                     repo.save_unit_info(units)
                     print(f"✅ {u_id} numaralı araç filoya eklendi.")
                     
             except ValueError:
-                print("! Hata: ID ve Konum sayı olmalı.")
+                print("[HATA] ID ve Konum sayı olmalı.")
             
             input("\nDevam etmek için Enter'a basın...")
 
-        # --- SEÇENEK 5: ARAÇ SİLME ---
-        elif secim == "5":
+        # Sistemden araç siler
+        elif text == "5":
             try:
-                silinecek_id = int(input("Silinecek Araç ID: "))
-                # Listeden bul ve sil (List Comprehension yöntemi)
-                eski_len = len(units)
-                units = [u for u in units if u.unit_id != silinecek_id]
+                deleted_id = int(input("Silinecek Araç ID: "))
+                # Listeden bulur ve siler
+                all_units_len = len(units)
+                # Listedeki tüm araçları tarar ve silinmek istenen ID'ye sahip araç hariç diğerlerini yeni bir listeye aktararak o aracı listeden çıkarır
+                units = [u for u in units if u.unit_id != deleted_id]
                 
-                if len(units) < eski_len:
-                    print(f"✅ {silinecek_id} silindi.")
-                    # Veritabanını güncelle
+                if len(units) < all_units_len:
+                    print(f"✅ {deleted_id} silindi.")
+                    # Veritabanını günceller
                     repo.save_unit_info(units)
-                    # Log dosyasından da temizle (Senin yazdığın fonksiyon)
-                    repo.delete_unit_from_file(silinecek_id)
+                    # Log dosyasından da temizler
+                    repo.delete_unit_from_file(deleted_id)
                 else:
-                    print("! Araç bulunamadı.")
+                    print("[HATA] Araç bulunamadı")
             except ValueError:
-                print("! Hata: Sayı giriniz.")
+                print("[HATA] Sayı giriniz.")
             
             input("\nDevam etmek için Enter'a basın...")
 
-        # --- SEÇENEK 6: LOG OKUMA ---
-        elif secim == "6":
-            # Senin service.event_log_management fonksiyonunu çağırabiliriz
-            # Ama basitlik olsun diye burada okuyalım
-            if os.path.exists(repo.file_name):
-                print("\n--- 📂 SON 10 VAKA KAYDI ---")
-                with open(repo.file_name, "r", encoding="utf-8") as f:
-                    # Son satırları göster
-                    print(f.read())
-            else:
-                print("Henüz kayıt yok.")
-            input("\nDevam etmek için Enter'a basın...")
+        # Sistem loglarını okuma
+        elif text == "6":
+            service.event_log_management()
 
-        # --- ÇIKIŞ ---
-        elif secim == "Q":
-            print("Sistem kapatılıyor... İyi nöbetler.")
+        # Çıkış
+        elif text == "Q":
+            print("[SİSTEM] Sistem kapatılıyor... İyi nöbetler")
             break
         
         else:
-            print("! Geçersiz seçim.")
+            print("[HATA] Geçersiz seçim")
             time.sleep(1)
             
 if __name__ == "__main__":

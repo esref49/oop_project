@@ -10,11 +10,27 @@ class AmbulanceUnit(EmergencyUnit):
         super().__init__(unit_id, unit_type, current_location, availability, fuel_level, is_enough_staff, is_siren_on, is_it_on_duty, max_fuel_level=80)
         
         # Ambulansa özgü özellikleri tanımlar
-        self.medical_supply_level = medical_supply_level
-        self.is_sterilized = is_sterilized
+        self.__medical_supply_level = medical_supply_level
+        self.__is_sterilized = is_sterilized
 
         self.is_broken = False
         self.availability = True
+
+    @property
+    def medical_supply_level(self):
+        return self.__medical_supply_level
+    
+    @medical_supply_level.setter
+    def medical_supply_level(self, new):
+        self.__medical_supply_level = new
+
+    @property
+    def is_sterilized(self):
+        return self.__is_sterilized
+
+    @is_sterilized.setter
+    def is_sterilized(self, new):
+        self.__is_sterilized = new
 
     # Aracın mevcut konumunu girilen yeni konum ile günceller
     def update_location(self, new_location):
@@ -45,16 +61,16 @@ class AmbulanceUnit(EmergencyUnit):
             print(f"[ARIZA] Kritik Arıza: {faulty_part}! Araç hizmet dışı")
         
         elif faulty_part and faulty_part.lower() in critical_parts and faulty_level == 1:
-            print(f"[ARIZA] Hafif Arıza: {faulty_part}. Göreve devam edebilir.")
+            print(f"[ARIZA] Hafif Arıza: {faulty_part}. Göreve devam edebilir")
             self.is_broken = False 
 
         # Herhangi bir arıza girilmemişse aracı sağlam olarak işaretler
         elif faulty_part is None and faulty_level is None:
             self.is_broken = False
-            print("[ARIZA] Arıza yok, araç sağlam.")
+            print("[ARIZA] Arıza yok araç sağlam")
 
         else:
-            print("[ARIZA] Tanımsız arıza durumu.")
+            print("[ARIZA] Tanımsız arıza durumu")
 
     # Arıza ile birlikte diğer tüm parametreleri değerlendirerek aracın müsaitliğini belirler
     def determine_availability(self):
@@ -62,15 +78,12 @@ class AmbulanceUnit(EmergencyUnit):
         # Sterilizasyon yoksa, malzeme azsa, personel eksikse veya araç bozuksa müsait değildir
         if not self.is_sterilized or self.medical_supply_level < 30 or self.is_enough_staff == False or self.is_broken:
             self.availability = False
-            print("[BİLGİ] Araç operasyonel eksiklikler nedeniyle müsait değil.")
         # Araç zaten görevdeyse müsait değildir
         elif self.is_it_on_duty:
             self.availability = False
-            print("[BİLGİ] Araç şu an görevde.")
         # Hiçbir sorun yoksa araç göreve müsaittir
         else:
             self.availability = True
-            print("[BİLGİ] Araç göreve hazır.")
 
     # Ambulansın benzin deposunu doldurur
     def refill_tank(self):
@@ -127,14 +140,38 @@ class PoliceUnit(EmergencyUnit):
         super().__init__(unit_id, unit_type, current_location, availability, fuel_level, is_enough_staff, is_siren_on, is_it_on_duty, max_fuel_level=65)
    
         # Polise özgü özellikleri ayarlar
-        self.prisoner_count = prisoner_count
-        self.patrol_area = patrol_area
-        self.unit_specialty = unit_specialty
+        self.__prisoner_count = prisoner_count
+        self.__patrol_area = patrol_area
+        self.__unit_specialty = unit_specialty
         self.max_fuel_level = 65
 
         self.is_broken = False
         self.availability = True
         self.gbt_check_count = 0 # GBT sayacını başlatır
+
+    @property
+    def prisoner_count(self):
+        return self.__prisoner_count
+    
+    @prisoner_count.setter
+    def prisoner_count(self, new):
+        self.__prisoner_count = new
+
+    @property
+    def patrol_area(self):
+        return self.__patrol_area
+    
+    @prisoner_count.setter
+    def patrol_area(self, new):
+        self.__patrol_area = new
+
+    @property
+    def unit_specialty(self):
+        return self.__unit_specialty
+    
+    @prisoner_count.setter
+    def unit_specialty(self, new):
+        self.__unit_specialty = new
 
     # Konum güncellemesi yapar
     def update_location(self, new_location):
@@ -179,16 +216,12 @@ class PoliceUnit(EmergencyUnit):
     # Aracın genel durumuna bakarak müsaitliğini belirler.
     # Personel, arıza, tutuklu gibi bir çok özelliği değerlendirir
     def determine_availability(self):
-        
         if self.is_enough_staff == False or self.is_broken or self.prisoner_count > 0:
             self.availability = False
-            print("[BİLGİ] Araç operasyonel eksiklikler veya tutuklu nedeniyle müsait değil")
         elif self.is_it_on_duty:
             self.availability = False
-            print("[BİLGİ] Araç şu an görevde")
         else:
             self.availability = True
-            print("[BİLGİ] Araç göreve hazır")
         
     # Acil durumlarda destek çağrısı ve konum bilgisini diğer ekiplerle paylaşır
     def call_for_backup(self, reason):
@@ -281,17 +314,32 @@ class FireFightingUnit(EmergencyUnit):
         
         super().__init__(unit_id, unit_type, current_location, availability, fuel_level, is_enough_staff, is_siren_on, is_it_on_duty, max_fuel_level = 85)
 
-        self.water_level = water_level
-        self.foam_level = foam_level
+        self.__water_level = water_level
+        self.__foam_level = foam_level
         self.ladder_length = ladder_length
         self.max_fuel_level = max_fuel_level
         self.max_water_level = max_water_level
         self.max_foam_level = max_foam_level
 
-
-        # Aracın teknik arıza durumu ve müsaitlik başlangıcı
         self.is_broken = False
         self.availability = True
+
+    @property
+    def water_level(self):
+        return self.__water_level
+    
+    @water_level.setter
+    def water_level(self, new):
+        self.__water_level = new
+
+    @property
+    def foam_level(self):
+        return self.__foam_level
+    
+    @foam_level.setter
+    def water_level(self, new):
+        self.__foam_level = new
+
 
     def update_location(self, new_location):
         self.current_location = new_location
@@ -311,7 +359,7 @@ class FireFightingUnit(EmergencyUnit):
     def report_fault(self, faulty_part=None, faulty_level=None):
         critical_parts = ["motor", "tekerlek", "gövde", "navigasyon", "merdiven", "pompa"]
         
-        # Parça ismini küçük harfe çevirip kritik parça listesinde olup olmadığını kontrol eder (None kontrolü eklendi)
+        # Parça ismini küçük harfe çevirip kritik parça listesinde olup olmadığını kontrol eder
         if faulty_part and faulty_part.lower() in critical_parts and faulty_level == 2:
             self.is_broken = True
             print(f"[ARIZA] Kritik Arıza: {faulty_part}! Araç hizmet dışı")
@@ -333,15 +381,12 @@ class FireFightingUnit(EmergencyUnit):
     def determine_availability(self):
         if self.fuel_level < 20 or self.foam_level < 10 or self.water_level < 20 or self.is_enough_staff == False or self.is_broken:
             self.availability = False
-            print("[BİLGİ] Araç operasyonel eksiklikler nedeniyle müsait değil")
 
         elif self.is_it_on_duty:
             self.availability = False
-            print("[BİLGİ] Araç şu an görevde")
 
         else:
             self.availability = True
-            print("[BİLGİ] Araç göreve hazır")
 
     # İtfaiyenin su ve köpük depolarını doldurmaya yarar
     def refill_tank(self):

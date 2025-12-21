@@ -1,19 +1,34 @@
 
 ==================================================
          CANLI FİLO TAKİP SİSTEMİ
-         Rapor Saati : 20-12-2025 19:08:32
-         Araç Sayısı : 5
+         Rapor Saati : 21-12-2025 23:07:21
+         Araç Sayısı : 11
 ==================================================
 
 
 --------------------------------------------------
 [AMBULANS KİMLİK KARTI]
-Araç Id                 : 101
+Araç Id                 : 102
+Araç Türü               : Ambulans
+Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
+Mevcut Konum            : 15
+Benzin Seviyesi         : 33
+Tıbbi Malzeme           : 88
+Sterilizasyon           : Hayır
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[AMBULANS KİMLİK KARTI]
+Araç Id                 : 103
 Araç Türü               : Ambulans
 Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
-Mevcut Konum            : 2
-Benzin Seviyesi         : 80
-Tıbbi Malzeme           : 90
+Mevcut Konum            : 15
+Benzin Seviyesi         : 47
+Tıbbi Malzeme           : 93
 Sterilizasyon           : Evet
 Personel Durumu         : Yeterli
 Siren Durumu            : Kapalı
@@ -23,13 +38,13 @@ Görevde mi              : Hayır
 
 --------------------------------------------------
 [AMBULANS KİMLİK KARTI]
-Araç Id                 : 102
+Araç Id                 : 104
 Araç Türü               : Ambulans
-Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
-Mevcut Konum            : 18
-Benzin Seviyesi         : 40
-Tıbbi Malzeme           : 50
-Sterilizasyon           : Hayır
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 15
+Benzin Seviyesi         : 63
+Tıbbi Malzeme           : 100
+Sterilizasyon           : Evet
 Personel Durumu         : Yeterli
 Siren Durumu            : Kapalı
 Görevde mi              : Hayır
@@ -40,15 +55,15 @@ Görevde mi              : Hayır
 [POLİS EKİBİ KİMLİK KARTI]
 Araç Id                 : 201
 Araç Türü               : Polis
-Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
-Mevcut Konum            : 5
-Benzin Seviyesi         : 60
-Uzmanlık Alanı          : Asayiş
-Devriye Bölgesi         : Merkez
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 3
+Benzin Seviyesi         : 55
+Uzmanlık Alanı          : 0
+Devriye Bölgesi         : 0
 Tutuklu Sayısı          : 0
 GBT Sorgu Sayısı        : 0
 Personel Durumu         : Yeterli
-Görevde mi              : Evet
+Görevde mi              : Hayır
 --------------------------------------------------
 
 
@@ -57,10 +72,42 @@ Görevde mi              : Evet
 Araç Id                 : 202
 Araç Türü               : Polis
 Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
-Mevcut Konum            : 15
-Benzin Seviyesi         : 65
-Uzmanlık Alanı          : Trafik
-Devriye Bölgesi         : Otoban
+Mevcut Konum            : 3
+Benzin Seviyesi         : 56
+Uzmanlık Alanı          : 0
+Devriye Bölgesi         : 0
+Tutuklu Sayısı          : 0
+GBT Sorgu Sayısı        : 0
+Personel Durumu         : Yeterli
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS EKİBİ KİMLİK KARTI]
+Araç Id                 : 203
+Araç Türü               : Polis
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 3
+Benzin Seviyesi         : 43
+Uzmanlık Alanı          : 0
+Devriye Bölgesi         : 0
+Tutuklu Sayısı          : 0
+GBT Sorgu Sayısı        : 0
+Personel Durumu         : Yeterli
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS EKİBİ KİMLİK KARTI]
+Araç Id                 : 204
+Araç Türü               : Polis
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 3
+Benzin Seviyesi         : 12
+Uzmanlık Alanı          : 0
+Devriye Bölgesi         : 0
 Tutuklu Sayısı          : 0
 GBT Sorgu Sayısı        : 0
 Personel Durumu         : Yeterli
@@ -72,14 +119,62 @@ Görevde mi              : Hayır
 [İTFAİYE ARACI KİMLİK KARTI]
 Araç Id                 : 301
 Araç Türü               : İtfaiye
-Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
-Mevcut Konum            : 8
-Benzin Seviyesi         : 85 lt
-Depodaki Su Seviyesi    : 100 lt
-Depodaki Köpük Seviyesi : 100 lt
-Merdiven Uzunluğu       : 20 m
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 13
+Benzin Seviyesi         : 83 lt
+Depodaki Su Seviyesi    : 239 lt
+Depodaki Köpük Seviyesi : 239 lt
+Merdiven Uzunluğu       : 45 m
 Personel Durumu         : Yeterli
-Siren Durumu            : Açık
-Görevde mi              : Evet
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE ARACI KİMLİK KARTI]
+Araç Id                 : 302
+Araç Türü               : İtfaiye
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 13
+Benzin Seviyesi         : 95 lt
+Depodaki Su Seviyesi    : 112 lt
+Depodaki Köpük Seviyesi : 112 lt
+Merdiven Uzunluğu       : 40 m
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE ARACI KİMLİK KARTI]
+Araç Id                 : 303
+Araç Türü               : İtfaiye
+Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
+Mevcut Konum            : 13
+Benzin Seviyesi         : 63 lt
+Depodaki Su Seviyesi    : 569 lt
+Depodaki Köpük Seviyesi : 569 lt
+Merdiven Uzunluğu       : 45 m
+Personel Durumu         : Eksik
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE ARACI KİMLİK KARTI]
+Araç Id                 : 304
+Araç Türü               : İtfaiye
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 13
+Benzin Seviyesi         : 58 lt
+Depodaki Su Seviyesi    : 92 lt
+Depodaki Köpük Seviyesi : 92 lt
+Merdiven Uzunluğu       : 30 m
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
 --------------------------------------------------
 

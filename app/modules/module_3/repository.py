@@ -14,7 +14,7 @@ class EmergencyRepository():
             with open(self.file_name, "r", encoding="utf-8") as f:
                 content = f.read()
                 # Dosyada kaç kere 'ID: Olay-' geçtiğini sayıyoruz
-                # Mesela 5 kayıt varsa, sayaç 5 olacak. Yeni kayıt 6 diye devam edecek
+                # Mesela 5 kayıt varsa, sayaç 5 olacak. 
                 count = content.count("ID: Olay-")
                 return count
         except FileNotFoundError:
@@ -22,6 +22,7 @@ class EmergencyRepository():
             return 0
 
     def save_case(self, case_data):
+        # Vakanın sırasını belirliyoruz
         self.case_counter += 1
         current_time = datetime.datetime.now().strftime("%d-%m-%Y %H:%M")
         
@@ -51,7 +52,7 @@ Vaka Durumu       : {case_data.get('status', 'Aktif')}
         except Exception as e:
             print(f"[HATA] Dosyaya yazarken sorun çıktı: {e}")
 
-    # Filodaki tüm araçların durumunu 'save_case' benzeri şık bir formatta units_log.txt dosyasına yazar
+    # Filodaki tüm araçların durumunu units_log.txt dosyasına yazar
     def save_unit_info(self, all_units):
         
         current_time = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -72,7 +73,7 @@ Vaka Durumu       : {case_data.get('status', 'Aktif')}
                 # Araçları limlik kartlarını tek tek dosyaya yazdırır
                 if all_units:
                     for unit in all_units:
-                        # Her birimin kendi süslü raporunu alıp yazıyoruz
+                        # Her birimin kendi raporunu alıp yazıyoruz
                         f.write(unit.get_detailed_status())
                         f.write("\n") # Bloklar birbirine yapışmasın
                 else:
