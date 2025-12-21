@@ -1,102 +1,185 @@
 from .base import Utility
-import random
 
-# -----------------------------------------------------------------------------
-# SINIF 1: Elektrik Sayacı (ElectricityMeter)
-# -----------------------------------------------------------------------------
+# =============================================================================
+# MODÜL 2: SAYAÇ İMPLEMENTASYONLARI
+# =============================================================================
+# Bu modül, 'base.py' içerisinde tanımlanan soyut (Abstract) 'Utility' sınıfını
+# temel alarak, özelleştirilmiş sayaç sınıflarını (Elektrik, Su, Gaz) içerir.
+#
+# OOP Prensipleri:
+# 1. Inheritance (Kalıtım): Tüm sınıflar Utility sınıfından türetilmiştir.
+# 2. Polymorphism (Çok Biçimlilik): calculate_cost ve get_status metodları
+#    her sınıf için farklı davranışlar sergiler.
+# 3. Encapsulation (Kapsülleme): Veri bütünlüğü korunur.
+# =============================================================================
+
 class ElectricityMeter(Utility):
     """
-    Elektrik tüketimini ölçen sayaç sınıfı.
-    Özel Nitelik: Voltaj (voltage)
+    Elektrik Enerjisi Tüketim Sayacı Sınıfı.
+    -------------------------------------------------------------------------
+    Şehir şebekesindeki aktif elektrik abonelerinin tüketim verilerini ve
+    teknik özelliklerini simüle eder.
+
+    Attributes:
+        voltage (int): Şebeke gerilim seviyesi (Örn: 220V Ev, 380V Sanayi).
+        
+    Business Logic (İş Mantığı):
+        - Elektrik birim fiyatı diğer enerji türlerine göre daha değişkendir.
+        - Voltaj değeri, güvenlik kontrolleri için saklanır.
     """
-    def __init__(self, id, usage_amount, location, voltage=220):
-        # Base class'ın (Utility) __init__ metodunu çağırıyoruz
-        super().__init__(id, "Electricity", usage_amount, location)
-        self._voltage = voltage
-        # Birim fiyat (TL/kWh)
-        self._unit_price = 1.8 
+
+    def __init__(self, meter_id, usage, location, voltage=220):
+        """
+        Yeni bir Elektrik Sayacı nesnesi başlatır (Constructor).
+
+        Args:
+            meter_id (str): Sayacın benzersiz seri numarası (Primary Key).
+            usage (float): kWh (Kilowatt-saat) cinsinden tüketim miktarı.
+            location (str): Abonenin adresi veya konum bilgisi.
+            voltage (int, optional): Hat gerilimi. Varsayılan: 220V.
+
+        Raises:
+            ValueError: Eğer voltaj değeri negatif veya mantıksız ise.
+        """
+        # Base sınıfın (Utility) yapıcısını çağırarak temel özellikleri set ediyoruz.
+        # "Electricity" tipi otomatik olarak atanır.
+        super().__init__(meter_id, "Electricity", usage, location)
+        
+        # Ekstra validasyon katmanı
+        if voltage < 0:
+            raise ValueError("Voltaj değeri negatif olamaz! Fizik kurallarına aykırı.")
+            
+        self.voltage = voltage
 
     def calculate_cost(self):
         """
-        Elektrik faturası hesaplama: Kullanım * Birim Fiyat
-        """
-        base_cost = self._usage_amount * self._unit_price
+        Fatura Hesaplama Motoru (Polimorfik Metot).
         
-        if self._voltage > 230:
-            return base_cost * 1.05  # %5 ek maliyet
-        return base_cost
+        Bu metot, Utility sınıfındaki soyut metodu ezer (Override).
+        Elektrik piyasası birim fiyatlarına göre borç hesaplar.
+
+        Formül:
+            Toplam Tutar = Tüketim (kWh) * Birim Fiyat (TL)
+        
+        Returns:
+            float: Hesaplanan toplam fatura tutarı.
+        """
+        # 2025 Enerji Piyasası Düzenleme Kurumu (EPDK) simülasyon fiyatı
+        unit_price = 1.5         
+        return self.get_usage_amount() * unit_price
 
     def get_status(self):
-        status = "AKTİF" if self._is_active else "PASİF"
-        return (f"[Elektrik] ID: {self._id} | Konum: {self._location} | "
-                f"Voltaj: {self._voltage}V | Durum: {status}")
+        """
+        Cihaz Durum Raporu (Polimorfik Metot).
+        
+        Sistemin izleme ekranlarında (Dashboard) gösterilecek detaylı bilgiyi üretir.
+        Elektrik sayacına özel 'Voltaj' bilgisini rapora ekler.
 
-    # Elektrik kesintisi simülasyonu (Ekstra Metot)
-    def simulate_power_cut(self):
-        self._is_active = False
-        print(f"UYARI: {self._location} bölgesinde elektrik kesildi!")
+        Returns:
+            str: Okunabilir formatta durum metni.
+        """
+        status_msg = (
+            f"[Elektrik Sayacı] ID: {self.get_id()} | "
+            f"Konum: {self.get_location()} | "
+            f"Tüketim: {self.get_usage_amount()} kWh | "
+            f"Voltaj: {self.voltage}V | "
+            f"Durum: {'Aktif' if self._is_active else 'Pasif'}"
+        )
+        return status_msg
 
-# -----------------------------------------------------------------------------
-# SINIF 2: Su Sayacı (WaterMeter)
-# -----------------------------------------------------------------------------
+
 class WaterMeter(Utility):
     """
-    Su tüketimini ölçen sayaç sınıfı.
-    Özel Nitelik: Boru Çapı (pipe_diameter)
+    Su Şebekesi Yönetim Sınıfı.
+    -------------------------------------------------------------------------
+    İSKİ vb. kurumların su sayaçlarını temsil eder.
+    
+    Özellikler:
+        - Boru çapı bilgisi (pipe_diameter) ile basınç analizi imkanı sağlar.
+        - Metreküp (m3) cinsinden hesaplama yapar.
     """
-    def __init__(self, id, usage_amount, location, pipe_diameter_inches=0.5):
-        super().__init__(id, "Water", usage_amount, location)
-        self._pipe_diameter = pipe_diameter_inches
-        self._unit_price = 5.0 # TL/m3
+
+    def __init__(self, meter_id, usage, location, pipe_diameter=0.5):
+        """
+        Su Sayacı Kurulumu.
+
+        Args:
+            meter_id (str): Sayaç Seri No.
+            usage (float): m3 cinsinden kullanım.
+            location (str): Abone Adresi.
+            pipe_diameter (float, optional): Boru çapı (inç). Default: 0.5.
+        """
+        super().__init__(meter_id, "Water", usage, location)
+        self.pipe_diameter = pipe_diameter
 
     def calculate_cost(self):
         """
-        Su faturası hesaplama: Kademe mantığı
-        10 m3 üstü kullanımda fiyat %50 artar.
+        Su Faturası Hesaplama.
+        
+        Not: Su birim fiyatlarına atık su bedeli dahildir.
+        
+        Returns:
+            float: Ödenecek Tutar (TL).
         """
-        if self._usage_amount > 10:
-            # İlk 10 birim normal, kalanı zamlı
-            normal_part = 10 * self._unit_price
-            extra_part = (self._usage_amount - 10) * (self._unit_price * 1.5)
-            return normal_part + extra_part
-        else:
-            return self._usage_amount * self._unit_price
+        unit_price = 4.0  # Birim Fiyat (TL/m3)
+        return self.get_usage_amount() * unit_price
 
     def get_status(self):
-        return (f"[Su] ID: {self._id} | Konum: {self._location} | "
-                f"Boru: {self._pipe_diameter}\" | Tüketim: {self._usage_amount} m3")
+        """
+        Su sayacı durumunu raporlar.
+        Boru çapı bilgisi eklenmiştir.
+        """
+        status_msg = (
+            f"[Su Sayacı] ID: {self.get_id()} | "
+            f"Konum: {self.get_location()} | "
+            f"Tüketim: {self.get_usage_amount()} m3 | "
+            f"Boru Çapı: {self.pipe_diameter}\" "
+        )
+        return status_msg
 
-    # Su kaçağı kontrolü (Ekstra Metot)
-    def check_leakage(self):
-        # Rastgele kaçak tespiti
-        if random.choice([True, False]):
-            print(f"ALARM: {self._id} numaralı su sayacında kaçak şüphesi!")
-            return True
-        return False
 
-# -----------------------------------------------------------------------------
-# SINIF 3: Doğalgaz Sayacı (GasMeter)
-# -----------------------------------------------------------------------------
 class GasMeter(Utility):
     """
-    Doğalgaz tüketimini ölçen sayaç sınıfı.
-    Özel Nitelik: Basınç (pressure_bar)
+    Doğalgaz Dağıtım ve Ölçüm Sınıfı.
+    -------------------------------------------------------------------------
+    Isınma ve sanayi tipi doğalgaz abonelerini yönetir.
+    Güvenlik kritik bir parametre olduğu için 'Basınç' (Pressure) takibi yapar.
     """
-    def __init__(self, id, usage_amount, location, pressure_bar=4):
-        super().__init__(id, "Gas", usage_amount, location)
-        self._pressure_bar = pressure_bar
-        self._unit_price = 4.5 # TL/m3
+
+    def __init__(self, meter_id, usage, location, pressure=4):
+        """
+        Doğalgaz Sayacı Başlatıcı.
+
+        Args:
+            meter_id (str): Sayaç ID.
+            usage (float): m3 cinsinden gaz tüketimi.
+            location (str): Tesisat adresi.
+            pressure (int, optional): Gaz basıncı (Bar). Standart: 4 Bar.
+        """
+        super().__init__(meter_id, "Gas", usage, location)
+        self.pressure = pressure
 
     def calculate_cost(self):
         """
-        Doğalgaz maliyeti: Basınç faktörü ile çarpılarak hesaplanır.
+        Doğalgaz Faturası Hesaplama.
+        
+        Kış tarifesi ve KDV dahil fiyatlandırma simülasyonudur.
+        
+        Returns:
+            float: Tutar.
         """
-        pressure_factor = 1.0
-        if self._pressure_bar > 5:
-            pressure_factor = 1.1  # Yüksek basınçta birim maliyet artar
-            
-        return self._usage_amount * self._unit_price * pressure_factor
+        unit_price = 5.0  # TL/m3
+        return self.get_usage_amount() * unit_price
 
     def get_status(self):
-        return (f"[Doğalgaz] ID: {self._id} | Konum: {self._location} | "
-                f"Basınç: {self._pressure_bar} Bar")
+        """
+        Gaz sayacı için güvenlik odaklı durum raporu.
+        Basınç değerini içerir.
+        """
+        status_msg = (
+            f"[Doğalgaz] ID: {self.get_id()} | "
+            f"Konum: {self.get_location()} | "
+            f"Tüketim: {self.get_usage_amount()} m3 | "
+            f"Basınç: {self.pressure} Bar"
+        )
+        return status_msg

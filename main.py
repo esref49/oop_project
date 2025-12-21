@@ -3,8 +3,9 @@ from app.modules.module_1.implementations import (
 )
 
 from app.modules.module_2.implementations import (
-    ElectricityMeter, WaterMeter, GasMeter
+     ElectricityMeter, WaterMeter, GasMeter
 )
+from app.modules.module_2.demo import run_demo as run_module_2_demo
 
 from app.modules.module_3.implementations import (
     Base3SubClass1, Base3SubClass2
@@ -26,13 +27,9 @@ def run_demo():
         n.method1()
 
     # Ogrenci 2 (Modul 2)
-    base_2 = [
-        ElectricityMeter("E-100", 150, "Musteri A", voltage=220),
-        WaterMeter("W-200", 25, "Musteri B"),
-        GasMeter("G-300", 100, "Musteri C")
-    ]
-    for n in base_2:
-        print(n.get_status())
+    print("\n--- [Modül 2] Akıllı Şehir Altyapı Sistemi ---")
+    run_module_2_demo()
+    print("----------------------------------------------\n")
 
         
     # Ogrenci 3 (Modul 3)
