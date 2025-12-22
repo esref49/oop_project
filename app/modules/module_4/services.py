@@ -240,10 +240,12 @@ class SosyalHizmetServisi:
         if not basvurular:
             return None
         
+        toplam_destek = sum(b.get("miktar", 0) for b in basvurular if b.get("durum") == "onaylandi")
+        
         return {
             "toplam_basvuru": len(basvurular),
             "onaylanan_sayi": len([b for b in basvurular if b.get("durum") == "onaylandi"]),
-            "toplam_alinan_destek": self.vatandas_toplam_destek(vatandas_adi),
+            "toplam_alinan_destek": toplam_destek,
             "ilk_basvuru": min([b.get("tarih", datetime.now()) for b in basvurular]),
             "son_basvuru": max([b.get("tarih", datetime.now()) for b in basvurular])
         }
