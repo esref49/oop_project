@@ -1,0 +1,180 @@
+[19:04:07] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:04:09] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:04:12] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:04:14] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:04:16] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:04:18] DURUM: Operasyon adımları tamamlandı.
+[19:04:20] SONUÇ RAPORU: Yaralı: 1 | Vefat: 1
+[19:05:17] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:05:19] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:05:22] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:05:24] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:05:26] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:05:28] DURUM: Operasyon adımları tamamlandı.
+[19:05:30] SONUÇ RAPORU: Yaralı: 2 | Vefat: 1
+[19:06:15] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:06:17] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:06:20] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:06:22] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:06:24] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:06:26] DURUM: Operasyon adımları tamamlandı.
+[19:06:28] SONUÇ RAPORU: Yaralı: 0 | Vefat: 0
+[19:08:03] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[19:08:05] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:08:08] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[19:08:10] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[19:08:12] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[19:08:14] DURUM: Operasyon adımları tamamlandı.
+[19:08:16] SONUÇ RAPORU: Yaralı: 0 | Vefat: 0
+[19:08:16] Birim merkeze dönüyor.
+ --------------------------------------------------
+[19:08:18] --- YENİ OPERASYON: Trafik Kazası | BİRİM: Polis (ID: 201) ---
+[19:08:20] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[19:08:23] ADIM UYGULANDI: 1. [İŞARET] Dubalarla yolu daralt, trafiği yavaşlat.
+[19:08:25] ADIM UYGULANDI: 2. [YARDIM] Yaralı varsa 112'ye haber ver, araçtan çıkarma.
+[19:08:27] ADIM UYGULANDI: 3. [TUTANAK] Kaza krokisini çiz ve tutanak tut.
+[19:08:29] DURUM: Operasyon adımları tamamlandı.
+[19:08:31] SONUÇ RAPORU: Yaralı: 3 | Vefat: 2
+[19:08:31] Birim merkeze dönüyor.
+ --------------------------------------------------
+[15:06:45] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:06:47] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[15:06:50] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:06:52] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[15:06:54] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[15:06:56] DURUM: Operasyon adımları tamamlandı.
+[15:06:58] SONUÇ RAPORU: Yaralı: 5 | Vefat: 3
+[15:06:58] Birim merkeze dönüyor.
+ --------------------------------------------------
+[15:27:40] --- YENİ OPERASYON: Trafik Kazası | BİRİM: Polis (ID: 201) ---
+[15:27:42] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[15:27:45] ADIM UYGULANDI: 1. [İŞARET] Dubalarla yolu daralt, trafiği yavaşlat.
+[15:27:47] ADIM UYGULANDI: 2. [YARDIM] Yaralı varsa 112'ye haber ver, araçtan çıkarma.
+[15:27:49] ADIM UYGULANDI: 3. [TUTANAK] Kaza krokisini çiz ve tutanak tut.
+[15:27:51] DURUM: Operasyon adımları tamamlandı.
+[15:27:53] SONUÇ RAPORU: Yaralı: 0 | Vefat: 0
+[15:27:53] Birim merkeze dönüyor.
+ --------------------------------------------------
+[15:30:47] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:30:49] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[15:30:52] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:30:54] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[15:30:56] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[15:30:58] DURUM: Operasyon adımları tamamlandı.
+[15:31:00] SONUÇ RAPORU: Yaralı: 3 | Vefat: 1
+[15:31:00] Birim merkeze dönüyor.
+ --------------------------------------------------
+[15:34:50] --- YENİ OPERASYON: Kalp Krizi | BİRİM: Ambulans (ID: 101) ---
+[15:34:52] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[15:34:55] ADIM UYGULANDI: 1. [VİTAL] Nabız ve solunum kontrolü yap.
+[15:34:57] ADIM UYGULANDI: 2. [CPR] Solunum yoksa kalp masajına başla, AED cihazını hazırla.
+[15:34:59] ADIM UYGULANDI: 3. [NAKİL] Damar yolu aç, en yakın KVC merkezine götür.
+[15:35:01] DURUM: Operasyon adımları tamamlandı.
+[15:35:03] SONUÇ RAPORU: Herhangi bir yaralanma veya can kaybı yok.
+[15:35:03] Birim merkeze dönüyor.
+ --------------------------------------------------
+[15:39:41] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:39:43] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[15:39:46] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:39:48] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[15:39:50] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[15:39:52] DURUM: Operasyon adımları tamamlandı.
+[15:39:54] SONUÇ RAPORU: Yaralı: 1 | Vefat: 1
+[15:39:54] Birim merkeze dönüyor.
+ --------------------------------------------------
+[15:45:16] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:45:18] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[15:45:21] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:45:23] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[15:45:25] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[15:45:27] DURUM: Operasyon adımları tamamlandı.
+[15:45:29] SONUÇ RAPORU: Yaralı: 0 | Vefat: 0
+[15:45:29] Birim merkeze dönüyor.
+ --------------------------------------------------
+[15:47:30] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:47:32] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[15:47:35] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:47:37] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[15:47:39] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[15:47:41] DURUM: Operasyon adımları tamamlandı.
+[15:47:43] SONUÇ RAPORU: Yaralı: 1 | Vefat: 0
+[15:47:43] Birim merkeze dönüyor.
+ --------------------------------------------------
+[16:05:20] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[16:05:22] DURUM: Plan oluşturuldu, müdahale başlıyor.
+[16:05:25] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[16:05:27] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[16:05:29] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[16:05:31] DURUM: Operasyon adımları tamamlandı.
+[16:05:33] SONUÇ RAPORU: Yaralı: 0 | Vefat: 0
+[16:05:33] Birim merkeze dönüyor.
+ --------------------------------------------------
+[22:55:02] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[22:55:04] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[22:55:07] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[22:55:09] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[22:55:11] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[22:55:13] [BİLGİ] Operasyon adımları tamamlandı.
+[22:55:15] [SONUÇ RAPORU] Yaralı: 0 | Vefat: 0
+[22:55:15] Birim merkeze dönüyor.
+ --------------------------------------------------
+[23:06:23] [BAKIM] 101 serviste bakımdan geçti
+[17:20:46] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[17:20:48] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[17:20:51] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[17:20:53] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[17:20:55] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[17:20:57] [BİLGİ] Operasyon adımları tamamlandı.
+[17:20:59] [SONUÇ RAPORU] Yaralı: 0 | Vefat: 0
+[17:20:59] Birim merkeze dönüyor.
+ --------------------------------------------------
+[17:21:54] [BAKIM] 101 serviste bakımdan geçti
+[12:42:14] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[12:42:16] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[12:42:19] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[12:42:21] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[12:42:23] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[12:42:25] [BİLGİ] Operasyon adımları tamamlandı.
+[12:42:27] [SONUÇ RAPORU] Yaralı: 1 | Vefat: 1
+[12:42:27] Birim merkeze dönüyor.
+ --------------------------------------------------
+[13:45:37] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[13:45:39] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[13:45:42] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[13:45:44] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[13:45:46] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[13:45:48] [BİLGİ] Operasyon adımları tamamlandı.
+[13:45:50] [SONUÇ RAPORU] Yaralı: 0 | Vefat: 1
+[13:45:50] Birim merkeze dönüyor.
+ --------------------------------------------------
+[14:45:23] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[14:45:25] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[14:45:28] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[14:45:30] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[14:45:32] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[14:45:34] [BİLGİ] Operasyon adımları tamamlandı.
+[14:45:36] [SONUÇ RAPORU] Yaralı: 0 | Vefat: 0
+[14:45:36] Birim merkeze dönüyor.
+==================================================
+[15:12:29] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:12:31] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[15:12:34] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:12:36] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[15:12:38] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[15:12:40] [BİLGİ] Operasyon adımları tamamlandı.
+[15:12:42] [SONUÇ RAPORU] Yaralı: 1 | Vefat: 1
+[15:12:42] Birim merkeze dönüyor.
+==================================================
+[15:15:27] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:15:29] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[15:15:32] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:15:34] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[15:15:36] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[15:15:38] [BİLGİ] Operasyon adımları tamamlandı.
+[15:15:40] [SONUÇ RAPORU] Yaralı: 0 | Vefat: 0
+[15:15:40] Birim merkeze dönüyor.
+==================================================
+[15:57:22] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 301) ---
+[15:57:24] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[15:57:27] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[15:57:29] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.

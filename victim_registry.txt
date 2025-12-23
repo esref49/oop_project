@@ -1,0 +1,1400 @@
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:35
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:35
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:40
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:40
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:44
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:44
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:46
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:46
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:47
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 12:47
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:09
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:20
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:36
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:40
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:43
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:45
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:45
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 12345678910
+==================================================
+Kayıt Tarihi            : 23-12-2025 13:46
+Ad Soyad                : Ahmet Mehmet
+Yaş                     : 2
+Kan Grubu               : 3
+Boy / Kilo              : 231 cm / 1312 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 44/10 (KRİTİK DURUM)
+Yaralayan Kişi          : ahmet mehmet
+Yaralanma Sebebi        : bıçaklanma
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 14:45
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 14:45
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:07
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:07
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:09
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:09
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:12
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:12
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:15
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:15
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:25
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:25
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:26
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:26
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:29
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:29
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:44
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:44
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:46
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:46
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:53
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:53
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:56
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:56
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:58
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 15:58
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:01
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:01
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:02
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:02
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:02
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:02
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:03
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:03
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:04
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:04
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:11
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:11
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:15
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:15
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:17
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 16:17
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 17:21
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 17:21
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:42
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:42
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:43
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:43
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:43
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:43
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 34567890123
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:44
+Ad Soyad                : Ayşe Demir
+Yaş                     : 28
+Kan Grubu               : 0 Rh+
+Boy / Kilo              : 165 cm / 60 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 8/10 (KRİTİK DURUM)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Trafik Kazası
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🔴 ACİL MÜDAHALE GEREKLİ
+==================================================
+
+
+==================================================
+[MAĞDUR KAYIT RAPORU] - TC: 45678901234
+==================================================
+Kayıt Tarihi            : 23-12-2025 19:44
+Ad Soyad                : Fatma Çelik
+Yaş                     : 45
+Kan Grubu               : AB Rh-
+Boy / Kilo              : 170 cm / 65 kg
+--------------------------------------------------
+YARALANMA BİLGİLERİ
+--------------------------------------------------
+Yaralanma Derecesi      : 3/10 (HAFİF)
+Yaralayan Kişi          : Bilinmiyor
+Yaralanma Sebebi        : Kavga
+Hayatta mı              : EVET
+--------------------------------------------------
+DURUM                   : 🟢 STABIL
+==================================================
+

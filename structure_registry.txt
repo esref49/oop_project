@@ -1,0 +1,103 @@
+
+==================================================
+         ALTYAPI KAYIT SİSTEMİ
+         Rapor Saati : 23-12-2025 19:44:15
+         Toplam Yapı : 6
+==================================================
+
+
+--------------------------------------------------
+[HASTAHANE KAYDI]
+ID                      : 1
+İsim                    : Şehir Hastanesi
+Adres                   : Merkez Mah.
+Kapasite                : 100
+Doluluk                 : 75
+Konum                   : 15
+--------------------------------------------------
+Doktor Sayısı           : 25
+Ambulans Sayısı         : 8
+Uzman Birimler          : ['Acil', 'KVC', 'Travma']
+Bakım Maliyeti          : 10000 TL
+--------------------------------------------------
+
+
+--------------------------------------------------
+[HASTAHANE KAYDI]
+ID                      : 2
+İsim                    : Acil Üniversite Hastanesi
+Adres                   : Üniversite Cad.
+Kapasite                : 50
+Doluluk                 : 45
+Konum                   : 25
+--------------------------------------------------
+Doktor Sayısı           : 15
+Ambulans Sayısı         : 5
+Uzman Birimler          : ['Acil', 'Çocuk', 'Nöroloji']
+Bakım Maliyeti          : 8000 TL
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS KARAKOLU KAYDI]
+ID                      : 3
+İsim                    : Merkez Karakol
+Adres                   : Merkez Sokak
+Kapasite                : 30
+Doluluk                 : 12
+Konum                   : 10
+--------------------------------------------------
+Hücre Sayısı            : 20
+Memur Sayısı            : 35
+Devriye Araç Sayısı     : 8
+Bakım Maliyeti          : 3900 TL
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS KARAKOLU KAYDI]
+ID                      : 4
+İsim                    : İlçe Emniyet
+Adres                   : İlçe Meydanı
+Kapasite                : 20
+Doluluk                 : 8
+Konum                   : 35
+--------------------------------------------------
+Hücre Sayısı            : 15
+Memur Sayısı            : 25
+Devriye Araç Sayısı     : 5
+Bakım Maliyeti          : 2750 TL
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE İSTASYONU KAYDI]
+ID                      : 5
+İsim                    : Merkez İtfaiye
+Adres                   : Ana Cad.
+Kapasite                : 15
+Doluluk                 : 10
+Konum                   : 5
+--------------------------------------------------
+İtfaiye Aracı Sayısı    : 6
+Su Tank Kapasitesi      : 50000 lt
+Köpük Rezervi           : 10000 lt
+Bakım Maliyeti          : 10800.0 TL
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE İSTASYONU KAYDI]
+ID                      : 6
+İsim                    : İlçe İtfaiye
+Adres                   : Yan Sokak
+Kapasite                : 10
+Doluluk                 : 4
+Konum                   : 40
+--------------------------------------------------
+İtfaiye Aracı Sayısı    : 4
+Su Tank Kapasitesi      : 30000 lt
+Köpük Rezervi           : 5000 lt
+Bakım Maliyeti          : 6200.0 TL
+--------------------------------------------------
+

@@ -1,0 +1,132 @@
+
+==================================================
+         CANLI FİLO TAKİP SİSTEMİ
+         Rapor Saati : 23-12-2025 19:44:23
+         Araç Sayısı : 8
+==================================================
+
+
+--------------------------------------------------
+[AMBULANS KİMLİK KARTI]
+Araç Id                 : 101
+Araç Türü               : Ambulans
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 9
+Benzin Seviyesi         : 79
+Tıbbi Malzeme           : 45
+Sterilizasyon           : Evet
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[AMBULANS KİMLİK KARTI]
+Araç Id                 : 102
+Araç Türü               : Ambulans
+Hizmette mi (Müsaitlik) : HAYIR (HİZMET DIŞI)
+Mevcut Konum            : 9
+Benzin Seviyesi         : 33
+Tıbbi Malzeme           : 88
+Sterilizasyon           : Hayır
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[AMBULANS KİMLİK KARTI]
+Araç Id                 : 103
+Araç Türü               : Ambulans
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 9
+Benzin Seviyesi         : 47
+Tıbbi Malzeme           : 93
+Sterilizasyon           : Evet
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS EKİBİ KİMLİK KARTI]
+Araç Id                 : 201
+Araç Türü               : Polis
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 13
+Benzin Seviyesi         : 55
+Uzmanlık Alanı          : 0
+Devriye Bölgesi         : 0
+Tutuklu Sayısı          : 0
+GBT Sorgu Sayısı        : 0
+Personel Durumu         : Yeterli
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS EKİBİ KİMLİK KARTI]
+Araç Id                 : 202
+Araç Türü               : Polis
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 13
+Benzin Seviyesi         : 56
+Uzmanlık Alanı          : 0
+Devriye Bölgesi         : 0
+Tutuklu Sayısı          : 0
+GBT Sorgu Sayısı        : 0
+Personel Durumu         : Yeterli
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[POLİS EKİBİ KİMLİK KARTI]
+Araç Id                 : 203
+Araç Türü               : Polis
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 13
+Benzin Seviyesi         : 43
+Uzmanlık Alanı          : 0
+Devriye Bölgesi         : 0
+Tutuklu Sayısı          : 0
+GBT Sorgu Sayısı        : 0
+Personel Durumu         : Yeterli
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE ARACI KİMLİK KARTI]
+Araç Id                 : 301
+Araç Türü               : İtfaiye
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 18
+Benzin Seviyesi         : 83 lt
+Depodaki Su Seviyesi    : 3000 lt
+Depodaki Köpük Seviyesi : 239 lt
+Merdiven Uzunluğu       : 45 m
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+
+
+--------------------------------------------------
+[İTFAİYE ARACI KİMLİK KARTI]
+Araç Id                 : 302
+Araç Türü               : İtfaiye
+Hizmette mi (Müsaitlik) : EVET (MÜSAİT)
+Mevcut Konum            : 18
+Benzin Seviyesi         : 95 lt
+Depodaki Su Seviyesi    : 1000 lt
+Depodaki Köpük Seviyesi : 112 lt
+Merdiven Uzunluğu       : 40 m
+Personel Durumu         : Yeterli
+Siren Durumu            : Kapalı
+Görevde mi              : Hayır
+--------------------------------------------------
+

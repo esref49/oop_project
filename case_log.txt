@@ -1,0 +1,80 @@
+
+==================================================
+[VAKA KAYIT RAPORU] - ID: Olay-1
+==================================================
+Tarih             : 20-12-2025 19:08
+Olay Türü         : Yangın
+Olay Konumu       : 10
+--------------------------------------------------
+Ciddiyet Seviyesi : 9 / 10
+Kritik Durum      : Evet
+Gereken Ekipler   : []
+--------------------------------------------------
+Atanan Birimler   : Atama Yapılamadı
+Vaka Durumu       : Active
+==================================================
+
+
+==================================================
+[VAKA KAYIT RAPORU] - ID: Olay-2
+==================================================
+Tarih             : 20-12-2025 19:08
+Olay Türü         : Trafik Kazası
+Olay Konumu       : 10
+--------------------------------------------------
+Ciddiyet Seviyesi : 5 / 10
+Kritik Durum      : Hayır
+Gereken Ekipler   : []
+--------------------------------------------------
+Atanan Birimler   : Atama Yapılamadı
+Vaka Durumu       : Active
+==================================================
+
+
+==================================================
+[VAKA KAYIT RAPORU] - ID: Olay-3
+==================================================
+Tarih             : 23-12-2025 15:15
+Olay Türü         : Yangın
+Olay Konumu       : 8
+--------------------------------------------------
+Ciddiyet Seviyesi : 9 / 10
+Kritik Durum      : Evet
+Gereken Ekipler   : []
+--------------------------------------------------
+Atanan Birimler   : Atama Yapılamadı
+Vaka Durumu       : Active
+==================================================
+
+
+==================================================
+[VAKA KAYIT RAPORU] - ID: Olay-4
+==================================================
+Tarih             : 23-12-2025 15:29
+Olay Türü         : yangın çıktı aq
+Olay Konumu       : 7
+--------------------------------------------------
+Ciddiyet Seviyesi : 5 / 10
+Kritik Durum      : Hayır
+Gereken Ekipler   : []
+--------------------------------------------------
+Atanan Birimler   : Atama Yapılamadı
+Vaka Durumu       : Active
+==================================================
+
+
+==================================================
+[VAKA KAYIT RAPORU] - ID: Olay-5
+==================================================
+Tarih             : 23-12-2025 15:57
+Olay Türü         : Yangın
+Olay Konumu       : 1
+--------------------------------------------------
+Ciddiyet Seviyesi : 4 / 10
+Kritik Durum      : Hayır
+Gereken Ekipler   : ['İtfaiye']
+--------------------------------------------------
+Atanan Birimler   : İtfaiye (ID: 301)
+Vaka Durumu       : Active
+==================================================
+

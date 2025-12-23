@@ -1,0 +1,9 @@
+[23:36:14] --- YENİ OPERASYON: Yangın | BİRİM: İtfaiye (ID: 11001) ---
+[23:36:16] [BİLGİ] Plan oluşturuldu, müdahale başlıyor.
+[23:36:19] ADIM UYGULANDI: 1. [GÜVENLİK] Çevre güvenliğini al, elektrik/gaz akışını kes.
+[23:36:21] ADIM UYGULANDI: 2. [MÜDAHALE] Rüzgarı arkana al, alevin kaynağına su/köpük sık.
+[23:36:23] ADIM UYGULANDI: 3. [KONTROL] Soğutma çalışması yap ve termal kamerayla kontrol et.
+[23:36:25] [BİLGİ] Operasyon adımları tamamlandı.
+[23:36:27] [SONUÇ RAPORU] Yaralı: 1 | Vefat: 0
+[23:36:27] Birim merkeze dönüyor.
+ --------------------------------------------------
